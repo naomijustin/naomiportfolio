@@ -12,7 +12,6 @@
 =============================================*/
 #landingContainer {
     height: 100vh;
-   
 }
 /*  =============================================
             Header Nav
@@ -60,8 +59,9 @@
 }
  
 #landingProfileImage {
-width: 650px;
+    width: 650px;
 }
+ 
 /* ============== Fade In Text =============  */
 #landingHiText {
    opacity: 0;
@@ -78,7 +78,8 @@ width: 650px;
 /* =================== Curved Skills Text Section =============== */
 #frontEndCurveSVG {
     position: absolute;
-    width: 1910px;
+    width: 660px;
+    height: 600px;
 }
  
  
@@ -86,11 +87,12 @@ width: 650px;
         Responsiveness
 =============================================     */
  
-/* ============  Breaks at 1089px ============== */
+/* ============  Breaks at 1089px WIDTH ============== */
 @media only screen and (max-width: 1089px) {
  
     #landingGridContainer {
         grid-template-columns: auto;
+        padding-bottom: 0px;
     }
  
     .landingFont {
@@ -108,19 +110,21 @@ width: 650px;
     }
   
     #landingProfileImage {
-        width: 550px;
+        width: 530px;
+        
     }
  
     #frontEndCurveSVG {
-        width: 1490px;
-        margin-top: 22px;
-        margin-left: 22px;
+        width: 480px;
+        height: 480px;
+        margin-top: 5px;
+        margin-left: 30px;
     }
     
 }
  
  
-/* ================= Breaks at 768px (Portrait Tablet) ============== */
+/* ================= Breaks at 768px (Portrait Tablet) WIDTH ============== */
 @media only screen and (max-width: 768px) {
    /* ----------- Header Nav (Logo, Hamburger) ------------ */
  
@@ -136,17 +140,68 @@ width: 650px;
     }
  
     #landingProfileImage {
-        width: 440px;
+        width: 400px;
+        padding: 0px;
+        margin: 0px;
     }
  
     #frontEndCurveSVG {
-        width: 1040px;
-        margin-top: 43px;
-        margin-left: 43px;
+        width: 370px;
+        height: 370px;
+        margin-top: 0px;
+        margin-left: 18px;
+    }
+ 
+    #landingGridContainer {
+        margin: 0px auto;
+        width: 100vw;
     }
     
 }
  
+ 
+ 
+/* ================= Breaks at 400px (Mobile Medium) WIDTH ============== */
+@media only screen and (max-width: 400px) {
+    /* ----------- Header Nav (Logo, Hamburger) ------------ */
+ 
+ 
+    /* ----------- */
+     .landingFont {
+         font-size: 30px;
+    }
+ 
+     /* ----------- Curved Text & Landing Profile Image ------------ */
+     body {
+         font-size: 19px;
+     }
+ 
+     #landingProfileImage {
+         width: 320px;
+         padding: 0px;
+         margin: 0px;
+         /* border: solid 2px pink; */
+     }
+ 
+     #frontEndCurveSVG {
+         width: 290px;
+         height: 290px;
+         margin-top: 1px;
+         margin-left: 20px;
+         /* border: solid 2px red; */
+     }
+ 
+     /* .landingGridItem {
+         border: solid 2px blue;
+     } */
+ 
+     #landingGridContainer {
+         border: 2px solid orange;
+         margin: 0px auto;
+         width: 100vw;
+     }
+     
+ }
  
  
  
