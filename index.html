@@ -39,18 +39,37 @@
         $("#landingImNaomiText").delay(1500).fadeTo(1000, 1);
         $("#landingNaomiProfile").delay(3000).fadeTo(1000, 1);
  
+        // =========================================
+        //         Hamburger Menu (Mobile)
+        // =========================================
+ 
         // Toggle Hamburger Menu
         $("#hamburgerBtn").click(function(){
-            if ($("#navBtnContainer").is(":visible")) {                
-                $("#navBtnContainer").hide();
-            }   else {
+            if ($("#navBtnContainer").is(":hidden")) {                
                 $("#navBtnContainer").show();
+                $("#mobileBgMenuFade").show();
+            }  
+            
+            
+        // Close Hamburger Menu via CLICK on Faded Section
+        $("#mobileBgMenuFade").click(function(){
+            if ($("#navBtnContainer").is(":visible")) {
+                $("#navBtnContainer").hide();
+                $("#mobileBgMenuFade").hide();
             }
-            
-            
-            // $("#navBtnContainer").show();
+        })
         
-        
+        // Close Hamburger Menu via ESC on Faded Section (Accessibility)
+        $(document).on("keydown", function(e){
+            if(e.which || e.keyCode || e.key == 27) {
+                if ($("#navBtnContainer").is(":visible")) {
+                $("#navBtnContainer").hide();
+                   $("#mobileBgMenuFade").hide();
+                }    
+            }
+ 
+            
+        })
         
         });
  
@@ -61,12 +80,15 @@
    
    
 </script>
-<!-- =============================
-           HTML MARKUP
-    =============================
+<!-- =============================================
+                    HTML MARKUP
+    ==============================================
 -->
    <main>
        <div id="landingContainer">
+ 
+        <!-- Mobile Background Menu Fade -->
+        <div id="mobileBgMenuFade" style="display: none;"></div>
  
            <!-- Header Nav -->
            <div id="headerNavContainer">
@@ -85,21 +107,13 @@
                    <a href="#contact" class="navButton">Contact</a>
                </div>
  
-               <!-- Mobile Nav Container -->
-               <div id="mobileNavMenu" style="display: none;">
-                    Test
-               </div>
- 
            </div>
- 
-           
  
           
            <!-- Landing Grid -->
            <div id="landingGridContainer">
                <div class="landingGridItem">
                    <div id="landingTextWrapper" class="landingFont"><span id="landingHiText">Hi,&nbsp;</span><span id="landingImNaomiText">I'm Naomi</span></div>
-                   <!--    <div id="landingImNaomiText" class="landingGridItem landingFont"> I'm Naomi</div>   -->
                </div>
  
                <div id="landingNaomiProfile" class="landingGridItem">
@@ -130,6 +144,7 @@
            </div>
           
        </div>
+       
    </main>
 </body>
 </html>
