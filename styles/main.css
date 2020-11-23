@@ -1,5 +1,31 @@
 /*  ============================================= 
- 
+            Default CSS Elements
     =============================================     */
+    body {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 18px;
+    }
+ 
+/*  =============================================
+                Header
+    =============================================*/
+    #headerNavContainer {
+        color: #64625B;
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 30px;
+    }
+ 
+    .navButton {
+        background-color: transparent;
+        color: #64625B;
+        border: 0px;
+        margin: 0px 10px 0px 10px;
+        font-weight: 600;
+    }
+    
+    .navButton:hover {
+        color: #E4DECB;
+    }
  
 
