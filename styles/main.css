@@ -13,15 +13,15 @@
 #landingContainer {
     height: 100vh;
 }
- 
+
 /*  =============================================
             Focus Elements
 =============================================*/
 button:focus {
     outline: none; 
 }
- 
- 
+
+
 /*  =============================================
             Header Nav
 =============================================*/
@@ -33,11 +33,11 @@ button:focus {
     position: absolute;
     width: 100%;
 }
- 
+
 #navBtnContainer {
     margin: 15px 15px 0px 15px;
 }
- 
+
 .navButton {
     background-color: transparent;
     color: #64625B;
@@ -47,12 +47,12 @@ button:focus {
     font-size: 21px;
     text-decoration: none;
 }
- 
+
 .navButton:hover {
     color: #E4DECB;
     text-decoration: none;
 }
- 
+
 #mobileBgMenuFade {
     background-color: black;
     opacity: 0.6;
@@ -81,11 +81,11 @@ button:focus {
    font-size: 60px;
    font-weight: 600;
 }
- 
+
 #landingProfileImage {
     width: 650px;
 }
- 
+
 /* ============== Fade In Text =============  */
 #landingHiText {
    opacity: 0;
@@ -105,31 +105,31 @@ button:focus {
     width: 660px;
     height: 600px;
 }
- 
- 
+
+
 /*  =============================================
         Responsiveness
     =============================================     */
- 
- 
- 
+
+
+
 /* =================================  Breaks at 1089px WIDTH =========================== */
 @media only screen and (max-width: 1089px) {
- 
+
     #landingGridContainer {
         grid-template-columns: auto;
         padding-bottom: 0px;
     }
- 
+
     .landingFont {
         font-size: 45px;
    }
- 
+
    /* ----- Fade In Text (Mobile Grid) -------*/
    #landingTextWrapper {
        text-align: center;
    }
- 
+
    /* -------- Curved Text & Landing Profile Image -------- */
    body {
     font-size: 19px;
@@ -139,7 +139,7 @@ button:focus {
         width: 530px;
         
     }
- 
+
     #frontEndCurveSVG {
         width: 480px;
         height: 480px;
@@ -148,26 +148,26 @@ button:focus {
     }
     
 }
- 
- 
- 
+
+
+
 /* ====================================  Breaks at 769px HEIGHT =========================== */
 @media only screen and (max-height: 769px) {
- 
+
     #landingGridContainer {
         grid-template-columns: auto;
         padding-bottom: 0px;
     }
- 
+
     .landingFont {
         font-size: 45px;
    }
- 
+
    /* ----- Fade In Text (Mobile Grid) -------*/
    #landingTextWrapper {
        text-align: center;
    }
- 
+
    /* -------- Curved Text & Landing Profile Image -------- */
    body {
     font-size: 19px;
@@ -177,7 +177,7 @@ button:focus {
         width: 530px;
         
     }
- 
+
     #frontEndCurveSVG {
         width: 480px;
         height: 480px;
@@ -186,47 +186,47 @@ button:focus {
     }
     
 }
- 
- 
- 
+
+
+
 /* ================================= Breaks at 768px (Portrait Tablet) WIDTH ====================== */
 @media only screen and (max-width: 768px) {
    /* ----------- Header Nav (Logo, Hamburger) ------------ */
- 
- 
+
+
    /* ----------- */
     .landingFont {
         font-size: 35px;
    }
- 
+
     /* ----------- Curved Text & Landing Profile Image ------------ */
     body {
         font-size: 19px;
     }
- 
+
     #landingProfileImage {
         width: 400px;
         padding: 0px;
         margin: 0px;
     }
- 
+
     #frontEndCurveSVG {
         width: 370px;
         height: 370px;
         margin-top: 0px;
         margin-left: 18px;
     }
- 
+
     #landingGridContainer {
         margin: 0px auto;
         width: 100vw;
     }
     
 }
- 
- 
- 
- 
+
+
+
+
 /* ================================= Breaks at 716px (Landscape Tablet) HEIGHT ====================== */
 @media only screen and (max-height: 716px) {
     /* ----------- Header Nav (Logo, Hamburger) ------------ */
@@ -261,23 +261,23 @@ button:focus {
      }
      
  }
- 
- 
+
+
 /* ================= Breaks at 601px (Above Mobile Medium Nav) "Hamburger Hide" WIDTH ============== */
 @media only screen and (min-width: 601px) {
     #mobileNavBtnContainer {
         display: none;
     }
- 
+
 }
- 
+
 /* ================= Breaks at 600px (Mobile Medium Nav) "Hamburger Show" WIDTH ============== */
 @media only screen and (max-width: 600px) {
- 
+
     #headerNavContainer {
         padding: 0px 0px 0px 0px;
     }
- 
+
     #navBtnContainer {
         position: absolute;
         width: 60vw;
@@ -289,30 +289,31 @@ button:focus {
         border-radius: 0px;
         background-color: #3A3A3A;
         height: 100vh;
+        /* Possibly insert Animation for Slide Menu here */
     }
- 
+
     #navBtnContainer a {
         display: block;
         text-align: center;
         background: #3A3A3A;
         padding-bottom: 15px;
     }
- 
+
     .navButton {
         color: #817E76;
     }
- 
+
     #hamburgerBtn {
         color: #64625B;
     }
- 
+
     #logoImage {
         width: 65px !important;
         margin: 10px 10px 0px 10px;
     }
 }
- 
- 
+
+
 /* ================= Breaks at 571px (Mobile Medium) HEIGHT ============== */
 @media only screen and (max-height: 571px) {
     /* ----------- Header Nav (Logo, Hamburger) ------------ */
@@ -352,7 +353,7 @@ button:focus {
      }
      
  }
- 
+
  /* ================= Breaks at 571px (Landscape Mobile Small) HEIGHT ============== */
 @media only screen and (max-height: 484px) {
     /* ----------- Header Nav (Logo, Hamburger) ------------ */
@@ -388,7 +389,7 @@ button:focus {
      }
      
  }
- 
+
  /* ================= Breaks at 400px (Mobile Medium) WIDTH ============== */
 @media only screen and (max-width: 400px) {
     /* ----------- Header Nav (Logo, Hamburger) ------------ */
@@ -426,9 +427,7 @@ button:focus {
      }
      
  }
- 
- 
- 
- 
- 
+
+
+
 
