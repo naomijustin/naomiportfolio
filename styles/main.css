@@ -34,6 +34,10 @@ button:focus {
     width: 100%;
 }
  
+#navBtnContainer {
+    margin: 15px 15px 0px 15px;
+}
+ 
 .navButton {
     background-color: transparent;
     color: #64625B;
@@ -261,15 +265,24 @@ button:focus {
 /* ================= Breaks at 600px (Mobile Medium Nav) "Hamburger Show" WIDTH ============== */
 @media only screen and (max-width: 600px) {
     #navBtnContainer {
+        position: absolute;
+        width: 85vw;
+        left: 0;
+        margin: 0px 0px 0px 0px;
+        z-index: 2;
         display: none;
+        border-radius: 0px;
     }
  
-    /* #navBtnContainer a {
+    #navBtnContainer a {
         display: block;
         text-align: center;
         border: 2px solid red;
         background: black;
-    } */
+        
+ 
+        
+    }
  
     #logoImage {
         width: 65px !important;
@@ -372,7 +385,7 @@ button:focus {
          width: 320px;
          padding: 0px;
          margin: 0px;
-         /* border: solid 2px pink; */
+         
      }
  
      #frontEndCurveSVG {
@@ -380,12 +393,9 @@ button:focus {
          height: 290px;
          margin-top: 1px;
          margin-left: 20px;
-         /* border: solid 2px red; */
+         
      }
  
-     /* .landingGridItem {
-         border: solid 2px blue;
-     } */
  
      #landingGridContainer {
          margin: 0px auto;
