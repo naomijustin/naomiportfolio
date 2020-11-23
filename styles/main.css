@@ -86,7 +86,7 @@ width: 650px;
         Responsiveness
 =============================================     */
  
-/* Breaks at 727px (362 difference) */
+/* ============  Breaks at 1089px ============== */
 @media only screen and (max-width: 1089px) {
  
     #landingGridContainer {
@@ -94,7 +94,7 @@ width: 650px;
     }
  
     .landingFont {
-        font-size: 40px;
+        font-size: 45px;
    }
  
    /* ----- Fade In Text (Mobile Grid) -------*/
@@ -104,7 +104,7 @@ width: 650px;
  
    /* -------- Curved Text & Landing Profile Image -------- */
    body {
-    font-size: 17px;
+    font-size: 19px;
     }
   
     #landingProfileImage {
@@ -112,21 +112,39 @@ width: 650px;
     }
  
     #frontEndCurveSVG {
-        width: 1610px;
+        width: 1490px;
+        margin-top: 22px;
+        margin-left: 22px;
     }
+    
 }
  
  
-/* ------------ 510px (255 difference) -------------- */
-@media only screen and (max-width: 765px) {
-   
+/* ================= Breaks at 768px (Portrait Tablet) ============== */
+@media only screen and (max-width: 768px) {
+   /* ----------- Header Nav (Logo, Hamburger) ------------ */
+ 
+ 
+   /* ----------- */
+    .landingFont {
+        font-size: 35px;
+   }
+ 
+    /* ----------- Curved Text & Landing Profile Image ------------ */
     body {
-        background-color: blue;
+        font-size: 19px;
     }
  
-    .landingFont {
-        font-size: 10px;
-   }
+    #landingProfileImage {
+        width: 440px;
+    }
+ 
+    #frontEndCurveSVG {
+        width: 1040px;
+        margin-top: 43px;
+        margin-left: 43px;
+    }
+    
 }
  
  
