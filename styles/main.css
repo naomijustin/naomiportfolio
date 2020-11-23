@@ -32,10 +32,12 @@ button:focus {
     padding: 30px 30px 0px 30px;
     position: absolute;
     width: 100%;
+    border: 2px solid pink;
 }
  
 #navBtnContainer {
     margin: 15px 15px 0px 15px;
+    border: 2px solid salmon;
 }
  
 .navButton {
@@ -264,11 +266,16 @@ button:focus {
  
 /* ================= Breaks at 600px (Mobile Medium Nav) "Hamburger Show" WIDTH ============== */
 @media only screen and (max-width: 600px) {
+ 
+    #headerNavContainer {
+        padding: 0px 0px 0px 0px;
+    }
+ 
     #navBtnContainer {
         position: absolute;
         width: 85vw;
         left: 0;
-        margin: 0px 0px 0px 0px;
+        margin: 90px 0px 0px 0px;
         z-index: 2;
         display: none;
         border-radius: 0px;
@@ -286,6 +293,7 @@ button:focus {
  
     #logoImage {
         width: 65px !important;
+        margin: 10px 10px 0px 10px;
     }
 }
  
