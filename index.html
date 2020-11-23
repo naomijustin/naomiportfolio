@@ -31,7 +31,20 @@
      =============================
 -->
 <script>
-     //End DOM Ready
+     $(document).ready(function(){
+        
+        // Show Landing Page Elements on load
+        $("#landingHiText").fadeTo(1500, 1);
+        $("#landingImNaomiText").delay(1500).fadeTo(1000, 1);
+        $("#landingNaomiProfile").delay(3000).fadeTo(1000, 1);
+        
+        
+        
+     }); //End DOM Ready
+        
+     
+     
+     
 </script>
  
 <!-- ============================= 
@@ -41,7 +54,7 @@
  
     <main>
         <div id="landingContainer">
-
+ 
             <!-- Header -->
             <div id="headerNavContainer"> 
                 <div><a href="index.html"><img src="https://naomijustin.com/images/naomi_logo_140x140_min.png" alt="Naomi Justin Logo" width="80" height="80"></a></div>
@@ -52,12 +65,39 @@
                     <span><button class="navButton">Contact</button></span>
                 </div>
             </div>
-
+            
             <!-- Landing Grid -->
             <div id="landingGridContainer">
-                <div class="landingGridItem landingFont" style="text-align: right;">Hi,&nbsp;</div>
-                <div class="landingGridItem landingFont"> I'm Naomi</div>
-                <div class="landingGridItem"><img src="https://naomijustin.com/images/naomi_profile_450x450_min.png" alt="Naomi Justin Profile Illustration"></div>
+                <div id="landingHiText" class="landingGridItem landingFont" style="text-align: right;">Hi,&nbsp;</div>
+                <div id="landingImNaomiText" class="landingGridItem landingFont"> I'm Naomi</div>
+                <div id="landingNaomiProfile" class="landingGridItem">
+                    <svg viewBox="87 88 950 950" id="frontEndCurveSVG" >
+                        <path id="frontEndCurvePath" fill="transparent" d="M 150 250 A 50 50 0 1 1 350 250 Z"/>
+                        <path id="artistUXCurvePath" fill="transparent" d="M 150 250 A 50 50 0 1 0 350 250 Z"/>
+                        
+                        <text dx="70" dy="-18" width="500" style="fill: #E4DECB;">
+                            <textpath alignment-baseline="top" xlink:href="#frontEndCurvePath">
+                                Front End Developer
+                            </textpath>
+                        </text>
+ 
+                        <text dx="50" dy="31" width="500" style="fill: #E4DECB;">
+                            <textpath alignment-baseline="top" xlink:href="#artistUXCurvePath">
+                                UX/UI
+                            </textpath>
+                        </text>
+ 
+                        <text dx="210" dy="31" width="500" style="fill: #E4DECB;">
+                            <textpath alignment-baseline="top" xlink:href="#artistUXCurvePath">
+                                Artist
+                            </textpath>
+                        </text>
+ 
+                    </svg>    
+                    <img src="https://naomijustin.com/images/naomi_profile_450x450_min.png" alt="Naomi Justin Profile Illustration" style="padding: 100px;">
+                        
+                    
+                </div>
             </div>
             
         </div>
@@ -65,3 +105,4 @@
  
 </body>
 </html>
+
