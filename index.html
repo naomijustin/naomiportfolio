@@ -11,7 +11,7 @@
    <!-- Styles       --> <link rel="stylesheet" type="text/css" href="styles/main.css">
    <!-- Josefin Sans --> <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
    <!-- jQuery       --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-   <!-- Favicon      --><link rel="icon" href="https://naomijustin.com/images/naomi_favicon_32x32.png" sizes="16x16 32x32" type="image/png">     
+   <!-- Favicon      --><link rel="icon" href="https://naomijustin.com/images/naomi_favicon_32x32.png" sizes="16x16 32x32" type="image/png">  
    <!--<base href="/">-->
    <base href="index.html" target="blank">
 </head>
@@ -25,24 +25,18 @@
     =============================
 -->
 <script>
-    function mobileMenu() {
-        // var linkToggle = $("#navBtnContainer");
-        // $("#navBtnContainer").show();
- 
-    }
- 
- 
+
     $(document).ready(function(){
       
         // Show Landing Page Elements on load
         $("#landingHiText").fadeTo(1500, 1);
         $("#landingImNaomiText").delay(1500).fadeTo(1000, 1);
         $("#landingNaomiProfile").delay(3000).fadeTo(1000, 1);
- 
+
         // =========================================
         //         Hamburger Menu (Mobile)
         // =========================================
- 
+
         // Toggle Hamburger Menu
         $("#hamburgerBtn").click(function(){
             if ($("#navBtnContainer").is(":hidden")) {                
@@ -67,12 +61,12 @@
                    $("#mobileBgMenuFade").hide();
                 }    
             }
- 
+
             
         })
         
         });
- 
+
       
     }); //End DOM Ready
       
@@ -86,19 +80,19 @@
 -->
    <main>
        <div id="landingContainer">
- 
+
         <!-- Mobile Background Menu Fade -->
         <div id="mobileBgMenuFade" style="display: none;"></div>
- 
+
            <!-- Header Nav -->
            <div id="headerNavContainer">
                <div><a href="index.html"><img id="logoImage" src="https://naomijustin.com/images/naomi_logo_140x140_min.png" alt="Naomi Justin Logo" style="width: 75px; height: auto;"></a></div>
                
                 <!-- Mobile Header Nav Icon (Hamburger Icon) -->
-               <div id="mobileNavBtnContainer" style="text-align: right; margin: 15px 15px 0px 15px;">
+               <div tabindex="0" id="mobileNavBtnContainer" style="text-align: right; margin: 15px 15px 0px 15px;">
                 <button class="navButton" id="hamburgerBtn" style="font-size: 27px;"><i class="fas fa-bars"></i></button>
            </div>
- 
+
                <!-- Nav Menu -->
                <div id="navBtnContainer" style="text-align: right;">
                    <a href="#work" class="navButton">Work</a>
@@ -106,9 +100,9 @@
                    <a href="#about" class="navButton">About</a>
                    <a href="#contact" class="navButton">Contact</a>
                </div>
- 
+
            </div>
- 
+
           
            <!-- Landing Grid -->
            <div id="landingGridContainer">
@@ -148,8 +142,6 @@
    </main>
 </body>
 </html>
- 
- 
  
  
 
