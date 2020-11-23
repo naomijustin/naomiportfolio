@@ -31,7 +31,7 @@
     border: 0px;
     margin: 0px 10px 0px 10px;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .navButton:hover {
@@ -42,11 +42,13 @@
 ============================================*/
 #landingGridContainer {
    display: grid;
-   grid-template-columns: auto auto auto;
+   grid-template-columns: auto auto;
    align-items: center;
+   justify-content: center;
    padding: 120px 0px 120px 0px;
    min-height: 100vh;
-   margin: 30px;
+   margin: 30px auto;
+   max-width: 1700px;
 }
 .landingGridItem {
    color: #E4DECB;
@@ -82,42 +84,24 @@ width: 650px;
 /*  =============================================
         Responsiveness
 =============================================     */
+
 /* Breaks at 727px (362 difference) */
 @media only screen and (max-width: 1089px) {
+
+    #landingGridContainer {
+        grid-template-columns: auto;
+    }
 
     .landingFont {
         font-size: 55px;
    }
-}   
-
-
-/* Breaks at 706px ( difference) */
-@media only screen and (max-width: 1059px) {
-
-    #landingGridContainer {
-        grid-template-columns: auto auto;
-    }
-
-    .landingFont {
-        font-size: 65px;
-   }
-
-   .landingGridItem {
-       border: 2px solid red;
-   }
 
    /* ----- Fade In Text (Mobile Grid) -------*/
-   #landingHiText {
-    text-align: center;
-}
- #landingImNaomiText {
-     opacity: 0;
-     text-align: center;
- }
-  #landingNaomiProfile {
-     opacity: 0;
-     text-align: center;
- }
+   #landingTextWrapper {
+       text-align: center;
+   }
+  
+
 }
 
 
