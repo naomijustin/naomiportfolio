@@ -3,10 +3,11 @@
     =============================================     */
     body {
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: 400;
     }
-
-
+ 
+ 
     /*  =============================================
                 Landing Container
     =============================================*/
@@ -14,9 +15,9 @@
         height: 100vh;
         
     }
-
+ 
 /*  =============================================
-                Header
+                Header Nav
     =============================================*/
     #headerNavContainer {
         color: #64625B;
@@ -26,19 +27,20 @@
         position: absolute;
         width: 100%;
     }
-
+ 
     .navButton {
         background-color: transparent;
         color: #64625B;
         border: 0px;
         margin: 0px 10px 0px 10px;
         font-weight: 600;
+        font-size: 20px;
     }
     
     .navButton:hover {
         color: #E4DECB;
     }
-
+ 
 /* ============================================
                Landing Grid
    ============================================*/
@@ -50,11 +52,34 @@
        padding: 120px 0px 120px 0px;
        min-height: 100vh;
    }
-
+ 
    .landingGridItem {
-       color: #E4DECB
+       color: #E4DECB;
    }
-
+ 
    .landingFont {
        font-size: 70px;
+       font-weight: 600;
    }
+ 
+ 
+   /* ============== Fade In Text =============  */
+   #landingHiText {
+       opacity: 0
+   }
+ 
+   #landingImNaomiText {
+        opacity: 0;
+    }
+ 
+    #landingNaomiProfile {
+        opacity: 0;
+    }
+ 
+    /* =================== Curved Skills Text =============== */
+    #frontEndCurveSVG {
+        position: absolute;
+    }
+ 
+ 
+
