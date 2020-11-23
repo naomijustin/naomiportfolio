@@ -45,9 +45,9 @@
    grid-template-columns: auto auto;
    align-items: center;
    justify-content: center;
-   padding: 120px 0px 120px 0px;
+   padding: 120px 0px 0px 0px;
    min-height: 100vh;
-   margin: 30px auto;
+   margin: 0 auto;
    max-width: 1700px;
 }
 .landingGridItem {
@@ -87,7 +87,11 @@
         Responsiveness
 =============================================     */
  
-/* ============  Breaks at 1089px WIDTH ============== */
+        /* HEIGHT */
+ 
+ 
+ 
+/* =================================  Breaks at 1089px WIDTH =========================== */
 @media only screen and (max-width: 1089px) {
  
     #landingGridContainer {
@@ -124,7 +128,46 @@
 }
  
  
-/* ================= Breaks at 768px (Portrait Tablet) WIDTH ============== */
+ 
+/* ====================================  Breaks at 769px HEIGHT =========================== */
+@media only screen and (max-height: 769px) {
+ 
+    #landingGridContainer {
+        grid-template-columns: auto;
+        padding-bottom: 0px;
+    }
+ 
+    .landingFont {
+        font-size: 45px;
+   }
+ 
+   /* ----- Fade In Text (Mobile Grid) -------*/
+   #landingTextWrapper {
+       text-align: center;
+   }
+ 
+   /* -------- Curved Text & Landing Profile Image -------- */
+   body {
+    font-size: 19px;
+    }
+  
+    #landingProfileImage {
+        width: 530px;
+        
+    }
+ 
+    #frontEndCurveSVG {
+        width: 480px;
+        height: 480px;
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+    
+}
+ 
+ 
+ 
+/* ================================= Breaks at 768px (Portrait Tablet) WIDTH ====================== */
 @media only screen and (max-width: 768px) {
    /* ----------- Header Nav (Logo, Hamburger) ------------ */
  
@@ -161,7 +204,120 @@
  
  
  
-/* ================= Breaks at 400px (Mobile Medium) WIDTH ============== */
+ 
+/* ================================= Breaks at 716px (Landscape Tablet) HEIGHT ====================== */
+@media only screen and (max-height: 716px) {
+    /* ----------- Header Nav (Logo, Hamburger) ------------ */
+ 
+ 
+    /* ----------- */
+     .landingFont {
+         font-size: 35px;
+    }
+ 
+     /* ----------- Curved Text & Landing Profile Image ------------ */
+     body {
+         font-size: 19px;
+     }
+ 
+     #landingProfileImage {
+         width: 400px;
+         padding: 0px;
+         margin: 0px;
+     }
+ 
+     #frontEndCurveSVG {
+         width: 370px;
+         height: 370px;
+         margin-top: 0px;
+         margin-left: 18px;
+     }
+ 
+     #landingGridContainer {
+         margin: 0px auto;
+         width: 100vw;
+     }
+     
+ }
+ 
+ 
+/* ================= Breaks at 571px (Mobile Medium) HEIGHT ============== */
+@media only screen and (max-height: 571px) {
+    /* ----------- Header Nav (Logo, Hamburger) ------------ */
+ 
+ 
+    /* ----------- */
+     .landingFont {
+         font-size: 30px;
+    }
+ 
+     /* ----------- Curved Text & Landing Profile Image ------------ */
+     body {
+         font-size: 19px;
+     }
+ 
+     #landingProfileImage {
+         width: 320px;
+         padding: 0px;
+         margin: 0px;
+     }
+ 
+     #frontEndCurveSVG {
+         width: 290px;
+         height: 290px;
+         margin-top: 1px;
+         margin-left: 20px;
+         /* border: solid 2px red; */
+     }
+ 
+     /* .landingGridItem {
+         border: solid 2px blue;
+     } */
+ 
+     #landingGridContainer {
+         margin: 0px auto;
+         width: 100vw;
+     }
+     
+ }
+ 
+ /* ================= Breaks at 571px (Landscape Mobile Small) HEIGHT ============== */
+@media only screen and (max-height: 484px) {
+    /* ----------- Header Nav (Logo, Hamburger) ------------ */
+ 
+ 
+    /* ----------- */
+     .landingFont {
+         font-size: 30px;
+    }
+ 
+     /* ----------- Curved Text & Landing Profile Image ------------ */
+     body {
+         font-size: 19px;
+     }
+ 
+     #landingProfileImage {
+         width: 320px;
+         padding: 0px;
+         margin: 0px;
+     }
+ 
+     #frontEndCurveSVG {
+         width: 290px;
+         height: 290px;
+         margin-top: 1px;
+         margin-left: 20px;
+     }
+ 
+     #landingGridContainer {
+         margin: 0px auto;
+         width: 100vw;
+         grid-template-columns: auto auto;
+     }
+     
+ }
+ 
+ /* ================= Breaks at 400px (Mobile Medium) WIDTH ============== */
 @media only screen and (max-width: 400px) {
     /* ----------- Header Nav (Logo, Hamburger) ------------ */
  
@@ -196,15 +352,11 @@
      } */
  
      #landingGridContainer {
-         border: 2px solid orange;
          margin: 0px auto;
          width: 100vw;
      }
      
  }
- 
- 
- 
  
  
  
