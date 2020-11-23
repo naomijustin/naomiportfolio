@@ -13,6 +13,15 @@
 #landingContainer {
     height: 100vh;
 }
+ 
+/*  =============================================
+            Focus Elements
+=============================================*/
+button:focus {
+    outline: none; 
+}
+ 
+ 
 /*  =============================================
             Header Nav
 =============================================*/
@@ -241,7 +250,7 @@
  }
  
  
-/* ================= Breaks at 601px (Above Mobile Medium Nav) WIDTH ============== */
+/* ================= Breaks at 601px (Above Mobile Medium Nav) "Hamburger Hide" WIDTH ============== */
 @media only screen and (min-width: 600px) {
     #mobileNavBtnContainer {
         display: none;
@@ -249,11 +258,18 @@
  
 }
  
-/* ================= Breaks at 600px (Mobile Medium Nav) WIDTH ============== */
+/* ================= Breaks at 600px (Mobile Medium Nav) "Hamburger Show" WIDTH ============== */
 @media only screen and (max-width: 600px) {
     #navBtnContainer {
         display: none;
     }
+ 
+    /* #navBtnContainer a {
+        display: block;
+        text-align: center;
+        border: 2px solid red;
+        background: black;
+    } */
  
     #logoImage {
         width: 65px !important;
