@@ -31,6 +31,7 @@
        $("#landingHiText").fadeTo(1500, 1);
        $("#landingImNaomiText").delay(1500).fadeTo(1000, 1);
        $("#landingNaomiProfile").delay(3000).fadeTo(1000, 1);
+ 
       
     }); //End DOM Ready
       
@@ -63,21 +64,21 @@
                </div>
  
                <div id="landingNaomiProfile" class="landingGridItem">
-                   <svg viewBox="87 88 950 950" id="frontEndCurveSVG" >
-                       <path id="frontEndCurvePath" fill="green" d="M 150 250 A 50 50 0 1 1 350 250 Z"/>
-                       <path id="artistUXCurvePath" fill="pink" d="M 150 250 A 50 50 0 1 0 350 250 Z"/>
+                   <svg viewBox="100 102 880 880" id="frontEndCurveSVG" >
+                       <path id="frontEndCurvePath" fill="green" opacity="0.5" d="M 150 250 A 50 50 0 1 1 350 250 Z"/>
+                       <path id="artistUXCurvePath" fill="pink" opacity="0.5" d="M 150 250 A 50 50 0 1 0 350 250 Z"/>
                       
-                       <text dx="70" dy="-18" width="500" style="fill: #E4DECB;">
-                           <textpath alignment-baseline="top" xlink:href="#frontEndCurvePath">
+                       <text dx="70" dy="-13" width="500" style="fill: #E4DECB;">
+                           <textpath id="frontEndTextPath" alignment-baseline="top" xlink:href="#frontEndCurvePath">
                                Front End Developer
                            </textpath>
                        </text>
-                       <text dx="50" dy="31" width="500" style="fill: #E4DECB;">
+                       <text dx="50" dy="27" width="500" style="fill: #E4DECB;">
                            <textpath alignment-baseline="top" xlink:href="#artistUXCurvePath">
                                UX/UI
                            </textpath>
                        </text>
-                       <text dx="210" dy="31" width="500" style="fill: #E4DECB;">
+                       <text dx="210" dy="27" width="500" style="fill: #E4DECB;">
                            <textpath alignment-baseline="top" xlink:href="#artistUXCurvePath">
                                Artist
                            </textpath>
