@@ -1,85 +1,80 @@
-/*  ============================================= 
-            Default CSS Elements
-    =============================================     */
-    body {
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 20px;
-        font-weight: 400;
-    }
- 
- 
-    /*  =============================================
-                Landing Container
-    =============================================*/
-    #landingContainer {
-        height: 100vh;
-        
-    }
- 
 /*  =============================================
-                Header Nav
-    =============================================*/
-    #headerNavContainer {
-        color: #64625B;
-        display: grid;
-        grid-template-columns: auto auto;
-        padding: 30px 30px 0px 30px;
-        position: absolute;
-        width: 100%;
-    }
- 
-    .navButton {
-        background-color: transparent;
-        color: #64625B;
-        border: 0px;
-        margin: 0px 10px 0px 10px;
-        font-weight: 600;
-        font-size: 20px;
-    }
-    
-    .navButton:hover {
-        color: #E4DECB;
-    }
- 
+           Default CSS Elements
+   =============================================     */
+   body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+/*  =============================================
+            Landing Container
+=============================================*/
+#landingContainer {
+    height: 100vh;
+   
+}
+/*  =============================================
+            Header Nav
+=============================================*/
+#headerNavContainer {
+    color: #64625B;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 30px 30px 0px 30px;
+    position: absolute;
+    width: 100%;
+}
+.navButton {
+    background-color: transparent;
+    color: #64625B;
+    border: 0px;
+    margin: 0px 10px 0px 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.navButton:hover {
+    color: #E4DECB;
+}
 /* ============================================
-               Landing Grid
-   ============================================*/
-   #landingGridContainer {
-       display: grid;
-       grid-template-columns: auto auto auto;
-       align-items: center;
-       
-       padding: 120px 0px 120px 0px;
-       min-height: 100vh;
-   }
- 
-   .landingGridItem {
-       color: #E4DECB;
-   }
- 
-   .landingFont {
-       font-size: 70px;
-       font-weight: 600;
-   }
- 
- 
-   /* ============== Fade In Text =============  */
-   #landingHiText {
-       opacity: 0
-   }
- 
-   #landingImNaomiText {
-        opacity: 0;
-    }
- 
-    #landingNaomiProfile {
-        opacity: 0;
-    }
- 
-    /* =================== Curved Skills Text =============== */
-    #frontEndCurveSVG {
-        position: absolute;
-    }
- 
- 
+           Landing Grid
+============================================*/
+#landingGridContainer {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   align-items: center;
+  
+   padding: 120px 0px 120px 0px;
+   min-height: 100vh;
+}
+.landingGridItem {
+   color: #E4DECB;
+}
+.landingFont {
+   font-size: 70px;
+   font-weight: 600;
+}
+
+#landingProfileImage {
+width: 650px;
+}
+/* ============== Fade In Text =============  */
+#landingHiText {
+   opacity: 0
+}
+#landingImNaomiText {
+    opacity: 0;
+}
+#landingNaomiProfile {
+    opacity: 0;
+}
+/* =================== Curved Skills Text Section =============== */
+#frontEndCurveSVG {
+    position: absolute;
+    width: 1910px;
+}
+
+
+
+
 
