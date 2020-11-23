@@ -34,12 +34,28 @@
  
     $(document).ready(function(){
       
-       // Show Landing Page Elements on load
-       $("#landingHiText").fadeTo(1500, 1);
-       $("#landingImNaomiText").delay(1500).fadeTo(1000, 1);
-       $("#landingNaomiProfile").delay(3000).fadeTo(1000, 1);
+        // Show Landing Page Elements on load
+        $("#landingHiText").fadeTo(1500, 1);
+        $("#landingImNaomiText").delay(1500).fadeTo(1000, 1);
+        $("#landingNaomiProfile").delay(3000).fadeTo(1000, 1);
  
-       
+        // Toggle Hamburger Menu
+        $("#hamburgerBtn").click(function(){
+            if ($("#navBtnContainer").is(":visible")) {
+                alert("Is visible");
+                $("#navBtnContainer").hide();
+            }   else {
+                alert("Is hidden");
+                $("#navBtnContainer").show();
+            }
+            
+            
+            // $("#navBtnContainer").show();
+        
+        
+        
+        });
+ 
       
     }); //End DOM Ready
       
@@ -60,18 +76,21 @@
                
                 <!-- Mobile Header Nav Icon (Hamburger Icon) -->
                <div id="mobileNavBtnContainer" style="text-align: right; margin: 15px 15px 0px 15px;">
-                <button class="navButton" id="hamburgerBtn" onclick="mobileMenu()" style="font-size: 27px;"><i class="fas fa-bars"></i></button>
+                <button class="navButton" id="hamburgerBtn" style="font-size: 27px;"><i class="fas fa-bars"></i></button>
            </div>
  
                <!-- Nav Menu -->
-               <div id="navBtnContainer" style="text-align: right; margin: 15px 15px 0px 15px;">
+               <div id="navBtnContainer" style="text-align: right;">
                    <a href="#work" class="navButton">Work</a>
                    <a href="#resume" class="navButton">Resume</a>
                    <a href="#about" class="navButton">About</a>
                    <a href="#contact" class="navButton">Contact</a>
                </div>
  
-               
+               <!-- Mobile Nav Container -->
+               <div id="mobileNavMenu" style="display: none;">
+                    Test
+               </div>
  
            </div>
  
