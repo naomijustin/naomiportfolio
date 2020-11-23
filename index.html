@@ -25,6 +25,13 @@
     =============================
 -->
 <script>
+    function mobileMenu() {
+        // var linkToggle = $("#navBtnContainer");
+        // $("#navBtnContainer").show();
+ 
+    }
+ 
+ 
     $(document).ready(function(){
       
        // Show Landing Page Elements on load
@@ -32,6 +39,7 @@
        $("#landingImNaomiText").delay(1500).fadeTo(1000, 1);
        $("#landingNaomiProfile").delay(3000).fadeTo(1000, 1);
  
+       
       
     }); //End DOM Ready
       
@@ -50,6 +58,11 @@
            <div id="headerNavContainer">
                <div><a href="index.html"><img id="logoImage" src="https://naomijustin.com/images/naomi_logo_140x140_min.png" alt="Naomi Justin Logo" style="width: 75px; height: auto;"></a></div>
                
+                <!-- Mobile Header Nav Icon (Hamburger Icon) -->
+               <div id="mobileNavBtnContainer" style="text-align: right; margin: 15px 15px 0px 15px;">
+                <button class="navButton" id="hamburgerBtn" onclick="mobileMenu()" style="font-size: 27px;"><i class="fas fa-bars"></i></button>
+           </div>
+ 
                <!-- Nav Menu -->
                <div id="navBtnContainer" style="text-align: right; margin: 15px 15px 0px 15px;">
                    <a href="#work" class="navButton">Work</a>
@@ -58,10 +71,7 @@
                    <a href="#contact" class="navButton">Contact</a>
                </div>
  
-               <!-- Mobile Header Nav Icon (Hamburger Icon) -->
-               <div id="mobileNavBtnContainer" style="text-align: right; margin: 15px 15px 0px 15px;">
-                    <a class="navButton" href="javascript:void(0);" onclick="myFunction()" style="font-size: 27px;"><i class="fas fa-bars"></i></a>
-               </div>
+               
  
            </div>
  
