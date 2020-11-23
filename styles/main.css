@@ -25,15 +25,16 @@
     position: absolute;
     width: 100%;
 }
+ 
 .navButton {
     background-color: transparent;
     color: #64625B;
     border: 0px;
     margin: 0px 10px 0px 10px;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 21px;
 }
-
+ 
 .navButton:hover {
     color: #E4DECB;
 }
@@ -57,7 +58,7 @@
    font-size: 60px;
    font-weight: 600;
 }
-
+ 
 #landingProfileImage {
 width: 650px;
 }
@@ -79,48 +80,61 @@ width: 650px;
     position: absolute;
     width: 1910px;
 }
-
-
+ 
+ 
 /*  =============================================
         Responsiveness
 =============================================     */
-
+ 
 /* Breaks at 727px (362 difference) */
 @media only screen and (max-width: 1089px) {
-
+ 
     #landingGridContainer {
         grid-template-columns: auto;
     }
-
+ 
     .landingFont {
-        font-size: 55px;
+        font-size: 40px;
    }
-
+ 
    /* ----- Fade In Text (Mobile Grid) -------*/
    #landingTextWrapper {
        text-align: center;
    }
+ 
+   /* -------- Curved Text & Landing Profile Image -------- */
+   body {
+    font-size: 17px;
+    }
   
-
+    #landingProfileImage {
+        width: 550px;
+    }
+ 
+    #frontEndCurveSVG {
+        width: 1610px;
+    }
 }
-
-
+ 
+ 
 /* ------------ 510px (255 difference) -------------- */
 @media only screen and (max-width: 765px) {
    
     body {
         background-color: blue;
     }
-
+ 
     .landingFont {
         font-size: 10px;
    }
 }
-
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
