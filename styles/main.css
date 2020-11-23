@@ -32,10 +32,12 @@
     margin: 0px 10px 0px 10px;
     font-weight: 600;
     font-size: 21px;
+    text-decoration: none;
 }
  
 .navButton:hover {
     color: #E4DECB;
+    text-decoration: none;
 }
 /* ============================================
            Landing Grid
@@ -85,9 +87,7 @@
  
 /*  =============================================
         Responsiveness
-=============================================     */
- 
-        /* HEIGHT */
+    =============================================     */
  
  
  
@@ -246,12 +246,17 @@
     #mobileNavBtnContainer {
         display: none;
     }
+ 
 }
  
 /* ================= Breaks at 600px (Mobile Medium Nav) WIDTH ============== */
 @media only screen and (max-width: 600px) {
     #navBtnContainer {
         display: none;
+    }
+ 
+    #logoImage {
+        width: 65px !important;
     }
 }
  
