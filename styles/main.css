@@ -241,6 +241,21 @@
  }
  
  
+/* ================= Breaks at 601px (Above Mobile Medium Nav) WIDTH ============== */
+@media only screen and (min-width: 600px) {
+    #mobileNavBtnContainer {
+        display: none;
+    }
+}
+ 
+/* ================= Breaks at 600px (Mobile Medium Nav) WIDTH ============== */
+@media only screen and (max-width: 600px) {
+    #navBtnContainer {
+        display: none;
+    }
+}
+ 
+ 
 /* ================= Breaks at 571px (Mobile Medium) HEIGHT ============== */
 @media only screen and (max-height: 571px) {
     /* ----------- Header Nav (Logo, Hamburger) ------------ */
