@@ -5,6 +5,7 @@
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: 400;
+    background-color: #1A1A1A;
 }
 /*  =============================================
             Landing Container
@@ -43,15 +44,15 @@
    display: grid;
    grid-template-columns: auto auto auto;
    align-items: center;
-  
    padding: 120px 0px 120px 0px;
    min-height: 100vh;
+   margin: 30px;
 }
 .landingGridItem {
    color: #E4DECB;
 }
 .landingFont {
-   font-size: 70px;
+   font-size: 60px;
    font-weight: 600;
 }
 
@@ -60,19 +61,80 @@ width: 650px;
 }
 /* ============== Fade In Text =============  */
 #landingHiText {
-   opacity: 0
+   opacity: 0;
+   text-align: right;
 }
 #landingImNaomiText {
     opacity: 0;
+    text-align: left;
 }
 #landingNaomiProfile {
     opacity: 0;
+    text-align: center;
 }
 /* =================== Curved Skills Text Section =============== */
 #frontEndCurveSVG {
     position: absolute;
     width: 1910px;
 }
+
+
+/*  =============================================
+        Responsiveness
+=============================================     */
+/* Breaks at 727px (362 difference) */
+@media only screen and (max-width: 1089px) {
+
+    .landingFont {
+        font-size: 55px;
+   }
+}   
+
+
+/* Breaks at 706px ( difference) */
+@media only screen and (max-width: 1059px) {
+
+    #landingGridContainer {
+        grid-template-columns: auto auto;
+    }
+
+    .landingFont {
+        font-size: 65px;
+   }
+
+   .landingGridItem {
+       border: 2px solid red;
+   }
+
+   /* ----- Fade In Text (Mobile Grid) -------*/
+   #landingHiText {
+    text-align: center;
+}
+ #landingImNaomiText {
+     opacity: 0;
+     text-align: center;
+ }
+  #landingNaomiProfile {
+     opacity: 0;
+     text-align: center;
+ }
+}
+
+
+/* ------------ 510px (255 difference) -------------- */
+@media only screen and (max-width: 765px) {
+   
+    body {
+        background-color: blue;
+    }
+
+    .landingFont {
+        font-size: 10px;
+   }
+}
+
+
+
 
 
 
