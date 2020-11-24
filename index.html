@@ -11,7 +11,8 @@
    <!-- Styles       --> <link rel="stylesheet" type="text/css" href="styles/main.css">
    <!-- Josefin Sans --> <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
    <!-- jQuery       --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-   <!-- Favicon      --><link rel="icon" href="https://naomijustin.com/images/naomi_favicon_32x32.png" sizes="16x16 32x32" type="image/png">  
+   <!-- Favicon      --> <link rel="icon" href="https://naomijustin.com/images/naomi_favicon_32x32.png" sizes="16x16 32x32" type="image/png">
+   <!-- Animate CSS  --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
    <!--<base href="/">-->
    <base href="index.html" target="blank">
 </head>
@@ -37,17 +38,39 @@
         //         Hamburger Menu (Mobile)
         // =========================================
 
-        // Toggle Hamburger Menu
+        // Show Hamburger Menu Click
         $("#hamburgerBtn").click(function(){
             if ($("#navBtnContainer").is(":hidden")) {                
+                //Add Animated Classes
+                const navShow = document.querySelector("#navBtnContainer");
+                navShow.classList.add('animate__animated', 'animate__fadeInRight');
+                const navBgShow = document.querySelector("#mobileBgMenuFade");
+                navBgShow.classList.add('animate__animated', 'animate__fadeIn');
                 $("#navBtnContainer").show();
                 $("#mobileBgMenuFade").show();
+                
+                // Remove Animated Classes
+                navShow.addEventListener('animationend', () => {
+                    navShow.classList.remove('animate__animated', 'animate__fadeInRight');
+                });
+                navBgShow.addEventListener('animationend', () => {
+                    navBgShow.classList.remove('animate__animated', 'animate__fadeIn');
+                });
+
+                
+                
             }  
             
+        // Show Hamburger Menu Enter (Add in)
             
         // Close Hamburger Menu via CLICK on Faded Section
         $("#mobileBgMenuFade").click(function(){
             if ($("#navBtnContainer").is(":visible")) {
+                const navHide = document.querySelector("#navBtnContainer");
+                navHide.classList.add('animate__animated', 'animate__fadeOutRight');
+                const navBgHide = document.querySelector("#mobileBgMenuFade");
+                navBgHide.classList.add('animate__animated', 'animate__fadeOut');
+
                 $("#navBtnContainer").hide();
                 $("#mobileBgMenuFade").hide();
             }
