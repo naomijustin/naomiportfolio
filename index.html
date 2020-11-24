@@ -41,7 +41,8 @@
         // Show Hamburger Menu Click
         $("#hamburgerBtn").click(function(){
             if ($("#navBtnContainer").is(":hidden")) {                
-                //Add Animated Classes
+                
+                // Add Animated Classes (Show)
                 const navShow = document.querySelector("#navBtnContainer");
                 navShow.classList.add('animate__animated', 'animate__fadeInRight');
                 const navBgShow = document.querySelector("#mobileBgMenuFade");
@@ -49,30 +50,37 @@
                 $("#navBtnContainer").show();
                 $("#mobileBgMenuFade").show();
                 
-                // Remove Animated Classes
+                // Remove Animated Classes (Show)
                 navShow.addEventListener('animationend', () => {
-                    navShow.classList.remove('animate__animated', 'animate__fadeInRight');
+                navShow.classList.remove('animate__animated', 'animate__fadeInRight');
                 });
                 navBgShow.addEventListener('animationend', () => {
-                    navBgShow.classList.remove('animate__animated', 'animate__fadeIn');
-                });
-
-                
-                
+                navBgShow.classList.remove('animate__animated', 'animate__fadeIn');
+                });                                
             }  
+
             
         // Show Hamburger Menu Enter (Add in)
             
         // Close Hamburger Menu via CLICK on Faded Section
         $("#mobileBgMenuFade").click(function(){
             if ($("#navBtnContainer").is(":visible")) {
+
+                // Add Animated Classes (Hide)
                 const navHide = document.querySelector("#navBtnContainer");
                 navHide.classList.add('animate__animated', 'animate__fadeOutRight');
                 const navBgHide = document.querySelector("#mobileBgMenuFade");
                 navBgHide.classList.add('animate__animated', 'animate__fadeOut');
-
                 $("#navBtnContainer").hide();
                 $("#mobileBgMenuFade").hide();
+
+                // Remove Animated Classes (Hide)
+                navHide.addEventListener('animationend', () => {
+                navHide.classList.remove('animate__animated', 'animate__fadeOutRight');
+                });
+                navBgHide.addEventListener('animationend', () => {
+                navBgHide.classList.remove('animate__animated', 'animate__fadeOut');
+                });
             }
         })
         
