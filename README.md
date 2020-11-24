@@ -19,6 +19,7 @@ This portfolio is to both demonstrate my skills and previous via the projects la
 * HTML
 * CSS
 * jQuery
+* JavaScript
 * "SVG Path Builder" by Anthony Dugios
 * Cloudflare (CDN for naomijustin.com)
  
