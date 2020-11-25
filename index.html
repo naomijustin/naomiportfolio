@@ -27,84 +27,22 @@
 -->
 <script>
 
+    // Loads Header Nav into Page
+    $(function() {
+        $("#navPlaceholder").load("headernav.html");
+    });
+    
+
+
+
     $(document).ready(function(){
-      
-        // =========================================
-        //              Landing Page
-        // =========================================
 
         // Show Landing Page Elements on load
         $("#landingHiText").fadeTo(1500, 1);
         $("#landingImNaomiText").delay(1500).fadeTo(1000, 1);
         $("#landingNaomiProfile").delay(3000).fadeTo(1000, 1);
 
-        // =========================================
-        //         Hamburger Menu (Mobile)
-        // =========================================
-
-        // =========== Show Hamburger Menu "Click" ============
-        $(".hamburgerBtn").click(function(){
-            if ($(".navBtnContainer").is(":hidden")) {                
-                
-                // // Add Animated Classes (Show)   ------------------------ This Works (Issue with Hide and Fade - Will continue at a later point)
-                // const navShow = document.querySelector(".navBtnContainer");
-                // navShow.classList.add('animate__animated', 'animate__fadeInRight');
-                // const navBgShow = document.querySelector(".mobileBgMenuFade");
-                // navBgShow.classList.add('animate__animated', 'animate__fadeIn');
-                $(".navBtnContainer").show();
-                $(".mobileBgMenuFade").show();
-                
-                // // Remove Animated Classes (Show)  ------------------------ This Partially Works (Issue with Opacity 0 to 1 [instead of 0 to 0.6]) - will continue at a later point
-                // navShow.addEventListener('animationend', () => {
-                // navShow.classList.remove('animate__animated', 'animate__fadeInRight');
-                // });
-                // navBgShow.addEventListener('animationend', () => {
-                // navBgShow.classList.remove('animate__animated', 'animate__fadeIn');
-                // });                                
-            }  
-        }) // > End Hamburger Click
-
-        // ========= Show Hamburger Menu "Enter"  (Accessibility) ===========
-        $(".hamburgerBtn").on("keydown", function(e){
-            if(e.which || e.keyCode || e.key == 13) {
-                if ($(".navBtnContainer").is(":hidden")) {
-                $(".navBtnContainer").show();
-                $(".mobileBgMenuFade").show();
-                }    
-            } 
-        })
-            
-        // ============ Close Hamburger Menu via "Click" on Faded Section ==============
-        $(".mobileBgMenuFade").click(function(){
-            if ($(".navBtnContainer").is(":visible")) {
-
-                // // Add Animated Classes (Hide)   ------------------------ This Is Not Working (Issue with Visible/Hidden Trigger) - will continue at a later point
-                // const navHide = document.querySelector(".navBtnContainer");
-                // navHide.classList.add('animate__animated', 'animate__fadeOutRight');
-                // const navBgHide = document.querySelector(".mobileBgMenuFade");
-                // navBgHide.classList.add('animate__animated', 'animate__fadeOut');
-                $(".navBtnContainer").hide();
-                $(".mobileBgMenuFade").hide();
-
-                // // Remove Animated Classes (Hide)   ------------------------ This Is Not Working (Issue with Visible/Hidden Trigger) - will continue at a later point
-                // navHide.addEventListener('animationend', () => {
-                // navHide.classList.remove('animate__animated', 'animate__fadeOutRight');
-                // });
-                // navBgHide.addEventListener('animationend', () => {
-                // navBgHide.classList.remove('animate__animated', 'animate__fadeOut');
-                // });
-            }
-        })
         
-        // ============== Close Hamburger Menu via "Esc" on Faded Section (Accessibility) =============
-        $(document).on("keydown", function(e){
-            if(e.which || e.keyCode || e.key == 27) {
-                if ($(".navBtnContainer").is(":visible")) {
-                $(".navBtnContainer").hide();
-                $(".mobileBgMenuFade").hide();
-                }    
-            } 
-        })
         
         
 
@@ -121,30 +59,12 @@
 -->
    <main>
        <div id="landingContainer">
+        
+        <!-- Header Nav Here -->
+        <!-- <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."headernav.html"); ?> -->
+        <div id="navPlaceholder"></div>
 
-        <!-- Mobile Background Menu Fade -->
-        <div class="mobileBgMenuFade" style="display: none;"></div>
 
-           <!-- Header Nav -->
-           <div class="headerNavContainer">
-               <div><a href="index.html"><img class="logoImage" src="https://naomijustin.com/images/naomi_logo_140x140_min.png" alt="Naomi Justin Logo" style="width: 75px; height: auto;"></a></div>
-               
-                <!-- Mobile Header Nav Icon (Hamburger Icon) -->
-               <div class="mobileNavBtnContainer" style="text-align: right; margin: 15px 15px 0px 15px;">
-                <button tabindex="0" class="navButton" class="hamburgerBtn" style="font-size: 27px;"><i class="fas fa-bars"></i></button>
-           </div>
-
-               <!-- Nav Menu -->
-               <div class="navBtnContainer" style="text-align: right;">
-                   <a href="/work.html" class="navButton">Work</a>
-                   <a href="#resume" class="navButton">Resume</a>
-                   <a href="#about" class="navButton">About</a>
-                   <a href="#contact" class="navButton">Contact</a>
-               </div>
-
-           </div> <!-- End Header Nav Container -->
-
-          
            <!-- Landing Grid -->
            <div id="landingGridContainer">
                <div class="landingGridItem">
@@ -176,9 +96,9 @@
                       
                   
                </div>
-           </div> <!-- End Landing Grid -->
+           </div>
           
-       </div> <!-- End Landing Container -->
+       </div>
        
    </main>
 </body>
