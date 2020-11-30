@@ -114,8 +114,16 @@
 /* ============================================
            Tabs - Work Page
 ============================================*/
+
+/* ========== Work Page - Tab Buttons ============ */
 #workTabContainer {
     padding-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    align-self: center;
+    grid-gap: 2px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .tabBtn {
@@ -127,6 +135,19 @@
 /* .tabBtn:hover {              >>> Currently having issue - needs to be added to "OpenTab Function on Work Page" 
     background-color: #78756D;
 } */
+
+
+/* ==================== Work Page - Tab Content =========== */
+#workTabContentContainer {
+    padding: 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    max-width: 920px;
+    
+    
+    
+}
 
 
 /*  =============================================
