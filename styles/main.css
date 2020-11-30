@@ -124,9 +124,9 @@
     color: #1A1A1A;
 }
 
-.tabBtn:hover {
-    color: #E4DECB;
-}
+/* .tabBtn:hover {              >>> Currently having issue - needs to be added to "OpenTab Function on Work Page" 
+    background-color: #78756D;
+} */
 
 
 /*  =============================================
