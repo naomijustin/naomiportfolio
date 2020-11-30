@@ -30,6 +30,10 @@
     // Loads Header Nav into Page
     $(function() {
         $("#navPlaceholder").load("/assets/headernav.html");
+
+        // Open first tab by default on page load
+        document.getElementById("defaultOpen").click();
+    
     });
 
     // Tabs Functionality
@@ -53,11 +57,12 @@
         // Add color to active Tab Button (Active Tab)
         elmnt.style.backgroundColor = color;
     }
+
+   
     
     $(document).ready(function(){
 
-        // Open first tab by default on page load
-        document.getElementById("defaultOpen").click();
+        
 
     }); //End DOM Ready
 </script>
@@ -75,18 +80,18 @@
 
     <!-- Tab Buttons -->
     <div id="workTabContainer"></div>
-        <button class="tabBtn" onclick="openTab('codeTab', this, '#E4DECB')">Code</button>
-        <button class="tabBtn">Art</button>
-        <button class="tabBtn">UX/UI</button>
-        <button class="tabBtn">Game Dev</button>
-        <button class="tabBtn">Video Editing</button>
-        <button class="tabBtn">Photography</button>
+        <button class="tabBtn" id="defaultOpen" onclick="openTab('codeTab', this, '#E4DECB')">Code</button>
+        <button class="tabBtn" onclick="openTab('artTab', this, '#E4DECB')">Art</button>
+        <button class="tabBtn" onclick="openTab('uxuiTab', this, '#E4DECB')">UX/UI</button>
+        <button class="tabBtn" onclick="openTab('gameDevTab', this, '#E4DECB')">Game Dev</button>
+        <button class="tabBtn" onclick="openTab('vidEditTab', this, '#E4DECB')">Video Editing</button>
+        <button class="tabBtn" onclick="openTab('photoTab', this, '#E4DECB')">Photography</button>
 
 <!-- Tab Content-->
 
 
         <!-- Tab 1 - Code & Web Building -->
-        <div id="codeTab" class="tabContent">
+        <div id="codeTab" class="tabContent defaultOpen">
             <h2>Code</h2>
             <h3>iiNet/tech2 Portal Front End</h3>
             <h3>Nigirizushi Tribute Page</h3>
@@ -121,13 +126,20 @@
                 <p>Background Artist</p>
         </div>
 
-        <!-- Tab 5 - Photography -->
-        <!-- Tab 6 - Video Editing -->
-        <h3>Haberfield Baptist Church Sermons</h3>
-            <p>Filmed, synced, edited and uploaded weekly sermons 2015 - mid 2020</p>
-            <a href="https://www.youtube.com/channel/UCmVrHmn4yEe8zsJ06JJnFqQ/videos" target="blank">Haberfield Baptist Youtube Channel</a>
-
+        <!-- Tab 5 - Video Editing -->
+        <div id="vidEditTab" class="tabContent">
+            <h2>Video Editing</h2>
+            <h3>Haberfield Baptist Church Sermons</h3>
+                <p>Filmed, synced, edited and uploaded weekly sermons 2015 - mid 2020</p>
+                <a href="https://www.youtube.com/channel/UCmVrHmn4yEe8zsJ06JJnFqQ/videos" target="blank">Haberfield Baptist Youtube Channel</a>
+        </div>
         
+        <!-- Tab 6 - Photography -->
+        <div id="photoTab" class="tabContent">
+            <h2>Photography</h2>
+            <h3>Shots</h3>
+                <p>Shots Paragraph</p>
+        </div>
 
 
 
