@@ -27,7 +27,7 @@
 -->
 <script>
 
-    // Loads Header Nav into Page
+    // ========= Loads Header Nav into Page ============
     $(function() {
         $("#navPlaceholder").load("/assets/headernav.html");
 
@@ -36,7 +36,7 @@
     
     });
 
-    // Tabs Functionality
+    // ======== Tabs Functionality ===========
     function openTab(tabName, elmnt, color) {
         // Hide all elements with class="tabContent" by default (Non-active Tab)
         var i, tabContent, tabBtn;
@@ -58,6 +58,24 @@
         elmnt.style.backgroundColor = color;
     }
 
+    // =========== Image Carosel ============
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n)
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = $(".codeSlides_1");
+        if (n > x.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = x.length};
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
    
     
     $(document).ready(function(){
@@ -115,8 +133,12 @@
                     </div>
                     <div class="workImage">
                         <div class="projectImageContainer">
-                            Test Image
+                            <img class="codeSlides_1" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2">
+                            <img class="codeSlides_1" src="https://www.rspcasa.org.au/wp-content/uploads/2019/01/Adopt-a-cat-or-kitten-from-RSPCA.jpg">
+                            <img class="codeSlides_1" src="https://i.guim.co.uk/img/media/c9b0aad22638133aa06cd68347bed2390b555e63/0_477_2945_1767/master/2945.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=97bf92d90f51da7067d00f8156512925">
                         </div>
+                        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
                     </div>
                 </div>
             </div>
