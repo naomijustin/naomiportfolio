@@ -169,6 +169,7 @@
     
     grid-column: auto;
     grid-row: 1 / 1;
+    
 }
 
 .workSkill {
@@ -185,6 +186,14 @@
 .projectImageContainer {
     border: 1px solid #64625B;
     box-shadow: 5px 5px #E4DECB;
+    width: 500px;
+    height: 300px;
+    margin: 0px 10px 10px 0px;
+    overflow: hidden;
+}
+
+.codeSlides_1 {
+    width: 100%;
 }
 
 
