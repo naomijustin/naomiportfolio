@@ -138,15 +138,36 @@
 
 
 /* ==================== Work Page - Tab Content =========== */
-#workTabContentContainer {
+#workTabContentList {
     padding: 20px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: auto;
     max-width: 920px;
-    
-    
-    
+    background-color: #3A3A3A;    
+}
+
+.projectContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+        
+}
+
+.workText {
+    background-color: gray;
+    grid-column: auto;
+    grid-row: 1 / 1;
+}
+
+.workImage {
+    background-color: gray;
+    grid-column: auto;
+    grid-row: 1 / 1;
+}
+
+.workSkill {
+    border-radius: 20px;
 }
 
 
