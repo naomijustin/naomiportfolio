@@ -143,8 +143,14 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto;
-    max-width: 920px;
-    background-color: #3A3A3A;    
+    max-width: 920px;    
+}
+
+.projectBG {
+    background-color: #282828;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
 }
 
 .projectContainer {
@@ -155,19 +161,30 @@
 }
 
 .workText {
-    background-color: gray;
     grid-column: auto;
     grid-row: 1 / 1;
 }
 
 .workImage {
-    background-color: gray;
+    
     grid-column: auto;
     grid-row: 1 / 1;
 }
 
 .workSkill {
     border-radius: 20px;
+    background-color: #64625B;
+    padding: 5px;
+    color: #1A1A1A;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* =============== Project Image Styling =================== */
+
+.projectImageContainer {
+    border: 1px solid #64625B;
+    box-shadow: 5px 5px #E4DECB;
 }
 
 
