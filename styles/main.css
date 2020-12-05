@@ -199,6 +199,52 @@
 
 
 /*  =============================================
+                About Page
+    =============================================     */
+
+/* =============== About Grid =================== */
+
+#aboutContainer {
+    padding: 20px;
+}
+
+#aboutGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 120px;
+    max-width: 900px;
+    margin: 0 auto;
+    align-self: center;
+    grid-gap: 10px;
+    height: auto;
+}
+
+.aboutGridItem {
+    background-color: #282828;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
+}s
+
+#aboutImageBlob {
+    width: 100%;
+    height: auto;
+    
+}
+
+/* #aboutImg {
+    clip-path: url(#clipPathAbout);
+    -webkit-clip-path: url(#clipPathAbout);
+} */
+
+.clippedAbout {
+    clip-path: url(#clipPathAbout);
+    -webkit-clip-path: url(#clipPathAbout);
+}
+
+
+
+/*  =============================================
         Responsiveness
     =============================================     */
 
