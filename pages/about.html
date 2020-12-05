@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>About</title>
+    <!-- *** Links *** -->
+    <!-- Bootstrap    --> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- Styles       --> <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <!-- Josefin Sans --> <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- jQuery       --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Favicon      --> <link rel="icon" href="https://naomijustin.com/images/naomi_favicon_32x32.png" sizes="16x16 32x32" type="image/png">
+    <!-- Animate CSS  --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+    <!--<base href="/">-->
+    <base href="/pages/about.html" target="blank">
+    </head>
+    <body>
+    <!-- jQuery, then Popper.js, then Bootstrap JS -->
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- =============================
+                SCRIPT
+    =============================
+-->
+<script>
+
+    // ========= Loads Header Nav into Page ============
+    $(function() {
+        $("#navPlaceholder").load("/assets/headernav.html");
+    });
+
+    
+    $(document).ready(function(){        
+
+    }); //End DOM Ready
+</script>
+
+<!-- =============================================
+                    HTML MARKUP
+    ==============================================
+-->
+<main>
+
+    <div id="aboutContainer">
+    
+        <!-- Header Nav inserts here-->
+        <div id="navPlaceholder"></div>
+
+        <!-- About Grid -->
+        <div id="aboutGrid">
+            
+            <div class="aboutGridItem">
+                
+                <!-- Test Nested SVG Blobs -->
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                    <path fill="#CD5C5C" d="M 175 24 L 555 30 L 478 476 "></path>
+                </svg> -->
+
+                <!-- "About" Profile Image and Clipping -->
+                <svg width="0" height="0">
+                    <defs>
+                        <clipPath id="clipPathAbout">
+                            <path d="M 45 244 C 74 169 34 106 111 52 C 192 0 399 9 364 133 C 320 250 417 316 289 366 C 180 407 4 355 45 244 Z"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            
+                <img class="clippedAbout" src="https://naomijustin.com/images/naomi_about_400px_min.png">    
+                
+
+                
+
+            </div>
+            <div class="aboutGridItem" style="padding: 20px;">
+                <strong>Naomi</strong> is an Australian artist and front-end developer currently learning React. 
+                Her work consists of front-end web building and design, digital art and animation, game development, film editing and other creative projects. 
+                While she is passionate about art and creativity, she is fascinated in the process of creating experiences that feel smooth and enjoyable.  
+            </div>
+        </div>
+
+
+    </div>
+</main>
+</body>
+</html>
