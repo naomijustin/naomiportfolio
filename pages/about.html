@@ -52,14 +52,11 @@
         <!-- About Grid -->
         <div id="aboutGrid">
             
-            <div class="aboutGridItem">
+            <div class="aboutGridItem aboutGridItemCenter">
                 
-                <!-- Test Nested SVG Blobs -->
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                    <path fill="#CD5C5C" d="M 175 24 L 555 30 L 478 476 "></path>
-                </svg> -->
+                
 
-                <!-- "About" Profile Image and Clipping -->
+                <!-- "About" Profile Image and Clipping DESKTOP -->
                 <svg width="0" height="0">
                     <defs>
                         <clipPath id="clipPathAbout">
@@ -67,17 +64,37 @@
                         </clipPath>
                     </defs>
                 </svg>
-            
-                <img class="clippedAbout" src="https://naomijustin.com/images/naomi_about_400px_min.png">    
                 
+                <!-- "About" Profile Image and Clipping MOBILE -->
+                <svg width="0" height="0">
+                    <defs>
+                        <clipPath id="clipPathAboutMb" transform="scale(0.7)">
+                            <path d="M 45 244 C 74 169 34 106 111 52 C 192 0 399 9 364 133 C 320 250 417 316 289 366 C 180 407 4 355 45 244 Z"/>
+                        </clipPath>
+                    </defs>
+                </svg>
 
+                <img id="clippedAbout" src="https://naomijustin.com/images/naomi_about_400px_min.png" alt="Naomi's Profile Photo"></img>    
+                    
+                <!-- ======== SVG Blobs =========== -->
+                <!-- Blob 1 -->
+                <svg viewbox="-100 0 550 550" id="aboutBlobs" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                    <path fill="#CD5C5C" opacity="0.9" d="M 91 68 C 117 48 142 21 175 52 C 207 90 142 86 159 114 C 177 140 130 156 98 156 C 39 158 27 117 91 68 Z"></path>
+                    <path fill="#E6B8A1" d="M 384 157 Q 388 172 404 162 C 426 147 376 122 384 157 Z"></path>
+                    <path fill="#F08080" opacity="0.9" d="M 364 299 C 370 359 329 324 303 356 C 267 390 263 356 283 321 C 306 276 356 245 364 299 Z"></path>
+                    
+                </svg>
+
+                <!-- Blob 2 -->
+                
+            
                 
 
             </div>
             <div class="aboutGridItem" style="padding: 20px;">
                 <strong>Naomi</strong> is an Australian artist and front-end developer currently learning React. 
                 Her work consists of front-end web building and design, digital art and animation, game development, film editing and other creative projects. 
-                While she is passionate about art and creativity, she is fascinated in the process of creating experiences that feel smooth and enjoyable.  
+                While she is passionate about art and creativity, she is fascinated in the process of creating experiences that feel smooth and enjoyable for end users.  
             </div>
         </div>
 
