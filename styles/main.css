@@ -19,7 +19,7 @@
             Focus Elements
 =============================================*/
 /* button:focus {
-    outline: none; 
+    outline: none;
 } */
 
 
@@ -132,7 +132,7 @@
     color: #1A1A1A;
 }
 
-/* .tabBtn:hover {              >>> Currently having issue - needs to be added to "OpenTab Function on Work Page" 
+/* .tabBtn:hover {              >>> Currently having issue - needs to be added to "OpenTab Function on Work Page"
     background-color: #78756D;
 } */
 
@@ -143,7 +143,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto;
-    max-width: 920px;    
+    max-width: 920px;
 }
 
 .projectBG {
@@ -157,7 +157,7 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 5px;
-        
+
 }
 
 .workText {
@@ -166,11 +166,11 @@
 }
 
 .workImage {
-    
+
     grid-column: auto;
     grid-row: 1 / 1;
     justify-self: right;
-    
+
 }
 
 .workSkill {
@@ -224,23 +224,27 @@
     padding: 10px;
     border-radius: 10px;
     margin: 10px 0px 10px 0px;
-}s
+}
 
 #aboutImageBlob {
     width: 100%;
     height: auto;
-    
+
 }
 
-/* #aboutImg {
-    clip-path: url(#clipPathAbout);
-    -webkit-clip-path: url(#clipPathAbout);
-} */
 
-.clippedAbout {
+#clippedAbout {
     clip-path: url(#clipPathAbout);
     -webkit-clip-path: url(#clipPathAbout);
 }
+
+
+#aboutBlobs {
+    position: absolute;
+    right: 50%;
+    width: 600px;
+}
+
 
 
 
@@ -271,10 +275,10 @@
    body {
     font-size: 19px;
     }
-  
+
     #landingProfileImage {
         width: 530px;
-        
+
     }
 
     #frontEndCurveSVG {
@@ -283,7 +287,43 @@
         margin-top: 5px;
         margin-left: 30px;
     }
-    
+
+}
+
+
+/* ============================ Break range 940px - 786px WIDTH ======================== */
+
+/* ---------- About Page Image Blobs ------------- */
+
+@media only screen and (max-width: 940px) and (min-width: 786px) {
+    #aboutBlobs {
+        left: -130px;
+    }
+}
+
+
+/* ============================ Breaks at 785px WIDTH ======================== */
+
+/* ------------------- About Page Content Grid ------------ */
+@media only screen and (max-width: 785px) {
+    #aboutGrid {
+        grid-template-columns: auto;
+        max-width: 450px;
+    }
+
+    .aboutGridItem {
+        margin: 0px;
+    }
+
+}
+
+/* ============================ Break range 785px - 510px WIDTH ======================== */
+/* --------------- About Blobs --------------  */
+@media only screen and (max-width: 785px) and (min-width: 510px) {
+    #aboutBlobs {
+        right: 50%;
+        margin-right: -225px;
+    }
 }
 
 
@@ -309,10 +349,10 @@
    body {
     font-size: 19px;
     }
-  
+
     #landingProfileImage {
         width: 530px;
-        
+
     }
 
     #frontEndCurveSVG {
@@ -321,7 +361,7 @@
         margin-top: 5px;
         margin-left: 30px;
     }
-    
+
 }
 
 
@@ -358,7 +398,7 @@
         margin: 0px auto;
         width: 100vw;
     }
-    
+
 }
 
 
@@ -367,36 +407,36 @@
 /* ================================= Breaks at 716px (Landscape Tablet) HEIGHT ====================== */
 @media only screen and (max-height: 716px) {
     /* ----------- Header Nav (Logo, Hamburger) ------------ */
- 
- 
+
+
     /* ----------- */
      .landingFont {
          font-size: 35px;
     }
- 
+
      /* ----------- Curved Text & Landing Profile Image ------------ */
      body {
          font-size: 19px;
      }
- 
+
      #landingProfileImage {
          width: 400px;
          padding: 0px;
          margin: 0px;
      }
- 
+
      #frontEndCurveSVG {
          width: 370px;
          height: 370px;
          margin-top: 0px;
          margin-left: 18px;
      }
- 
+
      #landingGridContainer {
          margin: 0px auto;
          width: 100vw;
      }
-     
+
  }
 
 
@@ -450,28 +490,58 @@
     }
 }
 
+/* ================= Breaks at 509px (Mobile Medium) WIDTH ============== */
+/* --------------- About Blobs --------------  */
+@media only screen and (max-width: 509px) {
+    #aboutBlobs {
+        right: 50%;
+        margin-right: -265px;
+        margin-top: -135px;
+        transform: scale(0.55);
+    }
+
+    #clippedAbout {
+        width: 230px;
+    }
+
+    #clipPathAbout {
+        transform: scale(0.55);
+    }
+
+    
+
+    .aboutGridItem {
+        margin: auto;
+        max-width: 265px;
+        
+    }
+
+
+}
+
+
 
 /* ================= Breaks at 571px (Mobile Medium) HEIGHT ============== */
 @media only screen and (max-height: 571px) {
     /* ----------- Header Nav (Logo, Hamburger) ------------ */
- 
- 
+
+
     /* ----------- */
      .landingFont {
          font-size: 30px;
     }
- 
+
      /* ----------- Curved Text & Landing Profile Image ------------ */
      body {
          font-size: 19px;
      }
- 
+
      #landingProfileImage {
          width: 320px;
          padding: 0px;
          margin: 0px;
      }
- 
+
      #frontEndCurveSVG {
          width: 290px;
          height: 290px;
@@ -479,90 +549,90 @@
          margin-left: 20px;
          /* border: solid 2px red; */
      }
- 
+
      /* .landingGridItem {
          border: solid 2px blue;
      } */
- 
+
      #landingGridContainer {
          margin: 0px auto;
          width: 100vw;
      }
-     
+
  }
 
  /* ================= Breaks at 571px (Landscape Mobile Small) HEIGHT ============== */
 @media only screen and (max-height: 484px) {
     /* ----------- Header Nav (Logo, Hamburger) ------------ */
- 
- 
+
+
     /* ----------- */
      .landingFont {
          font-size: 30px;
     }
- 
+
      /* ----------- Curved Text & Landing Profile Image ------------ */
      body {
          font-size: 19px;
      }
- 
+
      #landingProfileImage {
          width: 320px;
          padding: 0px;
          margin: 0px;
      }
- 
+
      #frontEndCurveSVG {
          width: 290px;
          height: 290px;
          margin-top: 1px;
          margin-left: 20px;
      }
- 
+
      #landingGridContainer {
          margin: 0px auto;
          width: 100vw;
          grid-template-columns: auto auto;
      }
-     
+
  }
 
  /* ================= Breaks at 400px (Mobile Medium) WIDTH ============== */
 @media only screen and (max-width: 400px) {
     /* ----------- Header Nav (Logo, Hamburger) ------------ */
- 
- 
+
+
     /* ----------- */
      .landingFont {
          font-size: 30px;
     }
- 
+
      /* ----------- Curved Text & Landing Profile Image ------------ */
      body {
          font-size: 19px;
      }
- 
+
      #landingProfileImage {
          width: 320px;
          padding: 0px;
          margin: 0px;
-         
+
      }
- 
+
      #frontEndCurveSVG {
          width: 290px;
          height: 290px;
          margin-top: 1px;
          margin-left: 20px;
-         
+
      }
- 
- 
+
+
      #landingGridContainer {
          margin: 0px auto;
          width: 100vw;
      }
-     
+
  }
 
 
