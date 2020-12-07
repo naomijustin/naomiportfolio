@@ -37,6 +37,8 @@
 
 #navBtnContainer {
     margin: 15px 15px 0px 15px;
+    display: inline;
+    position: relative;
 }
 
 .navButton {
@@ -439,12 +441,43 @@
 
  }
 
+ /* ================================ Break RANGE max 605px height, 811 min width ============== */
+
+ @media only screen and (max-height: 605px) and (min-width: 786px) and (max-width: 940px) {
+     /* ------------- About Page ------------------- */
+
+     #aboutGrid {
+         grid-template-columns: auto auto;
+     }
+
+     #clippedAbout {
+         transform: scale(0.8);
+         max-width: 230px;
+         margin-left: -20px;
+
+     }
+
+     #aboutBlobs {
+        transform: scale(0.5);
+        left: -200px;
+        top: 35px;
+     }
+
+     #clipPathAbout {
+         transform: scale(0.6);
+     }
+
+
+ }
+
 
 /* ================= Breaks at 601px (Above Mobile Medium Nav) "Hamburger Hide" WIDTH ============== */
 @media only screen and (min-width: 601px) {
     #mobileNavBtnContainer {
         display: none;
     }
+
+
 
 }
 
@@ -492,7 +525,7 @@
 
 /* ================= Breaks at 509px (Mobile Medium) WIDTH ============== */
 /* --------------- About Blobs --------------  */
-@media only screen and (max-width: 509px) {
+@media only screen and (max-width: 768px) {
     #aboutBlobs {
         right: 50%;
         margin-right: -265px;
@@ -501,19 +534,19 @@
     }
 
     #clippedAbout {
-        width: 230px;
+        max-width: 230px;
     }
 
     #clipPathAbout {
         transform: scale(0.55);
     }
 
-    
+
 
     .aboutGridItem {
         margin: auto;
         max-width: 265px;
-        
+
     }
 
 
