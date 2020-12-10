@@ -247,13 +247,6 @@
     width: 600px;
 }
 
-.contactGridItem {
-    background-color: #282828;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 10px 0px 10px 0px;
-}
-
 
 /*  =============================================
                 Contact Page
@@ -267,7 +260,7 @@
 
 #contactGrid {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     padding-top: 120px;
     max-width: 900px;
     margin: 0 auto;
@@ -275,6 +268,21 @@
     grid-gap: 10px;
     height: auto;
 }
+
+.contactGridItem1 {
+    background-color: #282828;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+.contactGridItem2 {
+    background-color: #282828;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
+}
+
 
 /*  =============================================
         Responsiveness
