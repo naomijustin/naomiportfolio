@@ -44,23 +44,44 @@
 -->
 <main>
 
+    
     <div id="contactContainer">
     
         <!-- Header Nav inserts here-->
         <div id="navPlaceholder"></div>
 
-        <!-- About Grid -->
-        <div id="contactGrid">
-            
-            <div class="contactGridItem1">
-                1
+        <!-- Contact Wrapper -->
+        <div id="contactWrapper">
+            <p>Let's chat! Fill out the contact form below and I'll get back to you as soon as I can.</p>
+            <!-- Contact Field Grid -->
+            <div id="contactFieldGrid">
+                <div>
+
+
+
+
+                </div>
+                <form>
+                    <div class="form-group" action="/action_page.php">
+                        <label for="inputName">Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="eg. John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="eg. test@test.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMessage">Message</label>
+                        <textarea class="form-control" id="inputMessage" rows="5"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+                
+
             </div>
-            <div class="contactGridItem1">
-                2
-            </div>
-            <div class="contactGridItem2">
-                3
-            </div>
+
         </div>
 
 
