@@ -258,29 +258,44 @@
     padding: 20px;
 }
 
-#contactGrid {
+#contactWrapper {
+    background-color: #282828;
+    margin: 0 auto;
+    margin-top: 120px;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+#contactFieldGrid {
     display: grid;
-    grid-template-columns: auto auto;
-    padding-top: 120px;
-    max-width: 900px;
+    grid-template-columns: auto;
+    max-width: 500px;
     margin: 0 auto;
     align-self: center;
     grid-gap: 10px;
     height: auto;
+    text-align: left;
 }
 
-.contactGridItem1 {
-    background-color: #282828;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 10px 0px 10px 0px;
+.form-control {
+    border: 0px;
 }
 
-.contactGridItem2 {
-    background-color: #282828;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 10px 0px 10px 0px;
+.btn-primary {
+    background-color: transparent;
+    border: 2px solid #E4DECB;
+    font-weight: 400;
+    color: #E4DECB;
+}
+
+.btn-primary:hover {
+    background-color: #E4DECB;
+    border: 2px solid #E4DECB;
+    color: #282828;
+    font-weight: 400;
 }
 
 
