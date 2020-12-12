@@ -18,15 +18,15 @@ This portfolio is to both demonstrate my skills and previous via the projects la
 ## Technologies
 * HTML
 * CSS
-* jQuery
 * JavaScript
+* jQuery
 * "SVG Path Builder" by Anthony Dugios
 * Cloudflare (CDN for naomijustin.com)
 * Bootstrap
 * PHP
  
 ## Launch
-* Launching to my domain naomijustin.com around the beginning of December 2020.
+* Launching site to domain naomijustin.com by end of December 2020.
  
 ## Illustrations
 ### Landing Page
