@@ -41,6 +41,10 @@
     position: relative;
 }
 
+#navBtnContainer a {
+    display: inline;
+}
+
 .navButton {
     background-color: transparent;
     color: #64625B;
@@ -350,6 +354,7 @@
     #aboutBlobs {
         left: -130px;
     }
+
 }
 
 
@@ -412,6 +417,7 @@
         margin-top: 5px;
         margin-left: 30px;
     }
+
 
 }
 
@@ -525,7 +531,14 @@
     #mobileNavBtnContainer {
         display: none;
     }
+    
+    #navBtnContainer {
+        display: inline !important;
+    }
 
+    #navBtnContainer a {
+        display: inline !important;
+    }
 
 
 }
