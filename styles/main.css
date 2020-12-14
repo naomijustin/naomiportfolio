@@ -130,12 +130,14 @@
     grid-gap: 2px;
     max-width: 900px;
     margin: 0 auto;
+    overflow: auto;
 }
 
 .tabBtn {
     background-color: #64625B;
     border: 0px transparent;
     color: #1A1A1A;
+    font-size: 19px;
 }
 
 /* .tabBtn:hover {              >>> Currently having issue - needs to be added to "OpenTab Function on Work Page"
@@ -166,6 +168,10 @@
 
 }
 
+.projectTitle {
+  font-size: 28px;  
+}
+
 .workText {
     grid-column: auto;
     grid-row: 1 / 1;
@@ -187,6 +193,7 @@
     font-size: 14px;
     font-weight: 800;
 }
+
 
 /* =============== Project Image Styling =================== */
 
@@ -474,6 +481,10 @@
         justify-self: center;
     
     }
+
+    .projectTitle {
+        font-size: 25px;
+    }
 }
 
 
@@ -711,14 +722,19 @@
          margin-top: 1px;
          margin-left: 20px;
      }
-
-     #landingGridContainer {
-         margin: 0px auto;
-         width: 100vw;
-         grid-template-columns: auto auto;
-     }
-
  }
+
+
+ /* ================= Range for landscape Mobile ================= */
+
+ @media only screen and (max-height: 484px) and (min-width: 530px) and (min-height: 397px) {
+    #landingGridContainer {
+        margin: 0px auto;
+        width: 100vw;
+        grid-template-columns: auto auto;
+    }
+ }
+
 
 
  /* ====================== Breaks at Max 500px WIDTH ================ */
@@ -729,9 +745,28 @@
            width: 310px;
            height: 185px;
        }
+
+       .projectTitle {
+        font-size: 21px;
+        }
     }
 
+/* ========================== Breaks at Max 454px WIDTH ================= */
 
+@media only screen and (max-width: 454px) {
+    .tabBtn {
+        font-size: 17px;
+    }
+}
+
+
+/* ========================== Breaks at Max 410px WIDTH ================= */
+
+@media only screen and (max-width: 410px) {
+    .tabBtn {
+        font-size: 16px;
+    }
+}
 
   /* ====================== Breaks at Max 396px WIDTH ================ */
  
@@ -741,7 +776,8 @@
            width: 240px;
            height: 145px;
        }
-    }
+
+}
    
 
  /* ================= Breaks at 400px (Mobile Medium) WIDTH ============== */
@@ -781,6 +817,8 @@
      }
 
  }
+
+
 
 
 
