@@ -456,6 +456,24 @@
         width: 100vw;
     }
 
+    /* ------------------------- Work Carousel Caption & Subtitle ----------------------- */
+    .d-md-block {
+        display: block !important; 
+    }
+
+    /* -------------------------- Project Image Container Styling ----------------- */
+    
+
+    .projectContainer {
+        grid-template-columns: auto;
+    }
+
+    .workImage {
+        grid-column: auto;
+        grid-row: 2 / 2;
+        justify-self: center;
+    
+    }
 }
 
 
@@ -523,6 +541,16 @@
      }
 
 
+ }
+
+ /* ====================== Breaks at Max Width 624px ================ */
+ 
+ @media only screen and (max-width: 624px) {
+ /* ---------- Work Page Carousel Image Size -------------- */
+    .projectImageContainer {
+        width: 400px;
+        height: 240px;
+    }
  }
 
 
@@ -656,7 +684,7 @@
 
  }
 
- /* ================= Breaks at 571px (Landscape Mobile Small) HEIGHT ============== */
+ /* ================= Breaks at 484px (Landscape Mobile Small) HEIGHT ============== */
 @media only screen and (max-height: 484px) {
     /* ----------- Header Nav (Logo, Hamburger) ------------ */
 
@@ -691,6 +719,30 @@
      }
 
  }
+
+
+ /* ====================== Breaks at Max 500px WIDTH ================ */
+ 
+ @media only screen and (max-width: 500px) {
+    /* ---------- Work Page Carousel Image Size -------------- */
+       .projectImageContainer {
+           width: 310px;
+           height: 185px;
+       }
+    }
+
+
+
+  /* ====================== Breaks at Max 396px WIDTH ================ */
+ 
+  @media only screen and (max-width: 396px) {
+    /* ---------- Work Page Carousel Image Size -------------- */
+       .projectImageContainer {
+           width: 240px;
+           height: 145px;
+       }
+    }
+   
 
  /* ================= Breaks at 400px (Mobile Medium) WIDTH ============== */
 @media only screen and (max-width: 400px) {
