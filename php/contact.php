@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
     $message = $_POST['message'];
     
     // Send form data via email
-    $mailTo = "test@test.com"; //Removed email for privacy
+    $mailTo = "test@test.com"; // Removing email for privacy reasons
     $headers = "From: ".$mailFrom;
     $txt = "You have received an email from ".$name.".\n\n".$message;
 
