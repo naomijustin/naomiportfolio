@@ -194,6 +194,22 @@
     font-weight: 800;
 }
 
+.projectText {
+    font-size: 16px;
+}
+
+.demoCodeBtn {
+    color: #64625B;
+    padding: 5px;
+    background-color: #1A1A1A;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.demoCodeBtn:hover {
+    color: #E4DECB;
+    text-decoration: none;
+}
 
 /* =============== Project Image Styling =================== */
 
@@ -216,10 +232,6 @@
     =============================================     */
 
 /* =============== About Grid =================== */
-
-#aboutContainer {
-    padding: 20px;
-}
 
 #aboutGrid {
     display: grid;
@@ -266,13 +278,13 @@
 /* =============== Contact Grid =================== */
 
 #contactContainer {
-    padding: 20px;
+    padding-top: 120px;
 }
 
 #contactWrapper {
     background-color: #282828;
     margin: 0 auto;
-    margin-top: 120px;
+    
     max-width: 500px;
     padding: 20px;
     border-radius: 10px;
@@ -307,6 +319,21 @@
     border: 2px solid #E4DECB;
     color: #282828;
     font-weight: 400;
+}
+
+
+/* ------------- Social Media Icons ---------------- */
+.socialMediaContainer {
+    text-align: center;
+    font-size: 30px;
+}
+
+.socialMediaIcon {
+    color: #64625B;
+}
+
+.socialMediaIcon:hover {
+    color: #E4DECB;
 }
 
 
