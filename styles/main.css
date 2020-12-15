@@ -125,7 +125,7 @@
 #workTabContainer {
     padding-top: 120px;
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(4, auto);
     align-self: center;
     grid-gap: 2px;
     max-width: 900px;
