@@ -211,6 +211,23 @@
     text-decoration: none;
 }
 
+.readMoreContainer {
+    margin: 18px 0px 18px 2px;
+}
+
+.readMoreContainer button {
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid #E4DECB;
+    background-color: transparent;
+    color: #E4DECB
+}
+
+.readMoreContainer button:hover {
+    background-color: #E4DECB;
+    color: #1A1A1A;
+}
+
 /* =============== Project Image Styling =================== */
 
 .projectImageContainer {
@@ -220,6 +237,27 @@
     height: 300px;
     margin: 0px 10px 10px 0px;
     overflow: hidden;
+}
+
+/* Project Lightbox */
+#workLightbox {
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    position: fixed;
+    z-index: 5;
+    background-color: #282828;
+    height: 80vh;
+    width: 80vw;
+    border-radius: 10px;
+}
+
+#workLightboxBG {
+ height: 100vh;
+ width: 100vw;
+ position: fixed;
+ z-index: 4;
+ opacity: 0.7;
+ background-color: black;
 }
 
 
