@@ -24,6 +24,8 @@ This portfolio is to both demonstrate my skills and previous via the projects la
 * Cloudflare (CDN for naomijustin.com)
 * Bootstrap
 * PHP
+* JSON
+* Ajax
  
 ## Launch
 * Launching site to domain naomijustin.com by end of December 2020.
