@@ -8,14 +8,18 @@ if (isset($_POST['submit'])) {
     $message = $_POST['message'];
     
     // Send form data via email
-    $mailTo = "test@test.com"; // Removing email for privacy reasons
+    $mailTo = "test@test.com"; // Removing for privacy
     $headers = "From: ".$mailFrom;
     $txt = "You have received an email from ".$name.".\n\n".$message;
 
     mail($mailTo, $subject, $txt, $headers);
-    // header("Location: /php/contact.html?mailsend=success");
-    //echo "<script>alert('Your message has been sent');window.location.href='/php/contact.html'</script>";
-    echo "<script>window.location.href='/php/contact.html';alert('Your message has been sent')</script>";
+    
+    //Correct Script (for deploy)
+    echo "<script>window.location.href='/pages/contact.html';alert('Your message has been sent')</script>";
+    
+    // Test Script
+    // echo "<script>window.location.href='/php/contact.html';alert('Your message has been sent')</script>";
+
     exit();
 }
 // else {
