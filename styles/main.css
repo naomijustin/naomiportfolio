@@ -265,8 +265,54 @@
 
 .modal-body {
     font-size: 16px;
+    max-height: 600px!important;
+    overflow-y: auto;
+    text-align: left;
 }
 
+.modal-dialog {
+    max-width: fit-content;
+    max-width: 700px;
+    
+}
+
+        /* ---- Project Content Lightbox Grid ---- */
+
+        .projectGridLB {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 10px;
+        }
+
+        /* Span Two Columns */
+        .projectGridItem1 {
+            justify-self: center;            
+            grid-column: 1 / span 2;
+        }
+
+        /* Span Single Column (From 1) */
+        .projectGridItem2 {
+            justify-self: center;
+            grid-column: 1 / span 1;
+        }
+
+        /* Span Single Column (From 2) */
+        .projectGridItem3 {
+            justify-self: center;
+            grid-column: 2 / span 1;
+        }
+
+        .projectGridLB em {
+            font-size: 18px;
+        }
+
+        .projectGridLB img {
+            border: 1px solid #64625B;
+            box-shadow: 5px 5px #E4DECB;
+            max-width: 500px;
+            width: 70vw;
+            min-width: 200px;
+        }
 
 /*  =============================================
                 About Page
