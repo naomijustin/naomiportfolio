@@ -234,6 +234,16 @@
     border: 2px solid #E4DECB;
 }
 
+/* ============ Art Grid ================== */
+.artGridContainer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.artGridItem_1 {
+    background-color: green;
+}
+
 /* =============== Project Image Styling =================== */
 
 .projectImageContainer {
