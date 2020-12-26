@@ -238,11 +238,40 @@
 .artGridContainer {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
 }
 
-.artGridItem_1 {
-    background-color: green;
+    /* Victor Portrait - Square */
+.artGridItem_1 {    
+    grid-column: 1 / span 4;    
 }
+
+    /* NZ Animation - Landscape Rectangle */
+
+.artGridItem_2 {
+    grid-column: 5 / span 4;    
+}
+
+/* Inktober Western - Landscape Rectangle  */
+.artGridItem_3 {    
+    grid-column: 1 / 5;    
+}
+
+/* Cat Holding Mug - Portrait Rectangle */
+.artGridItem_4 {    
+    grid-column: 5 / span 4;    
+}
+
+/* Space Animation - Landscape Rectangle */
+.artGridItem_5 {    
+    grid-column: 1 / span 4;    
+}
+
+/* Lady in Yellow */
+.artGridItem_6 {
+    grid-column: 5 / span 4;    
+}
+
 
 /* =============== Project Image Styling =================== */
 
