@@ -272,6 +272,27 @@
     grid-column: 5 / span 4;    
 }
 
+/* ==================== Art Flex ==================== */
+.artFlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column1 {
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column2 {
+    flex: 50%;
+    padding: 0 4px;  
+}
+
+.column div {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
 
 /* =============== Project Image Styling =================== */
 
