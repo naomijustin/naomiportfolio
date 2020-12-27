@@ -272,27 +272,6 @@
     grid-column: 5 / span 4;    
 }
 
-/* ==================== Art Flex ==================== */
-.artFlexContainer {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.column1 {
-    flex: 50%;
-    padding: 0 4px;
-}
-
-.column2 {
-    flex: 50%;
-    padding: 0 4px;  
-}
-
-.column div {
-    margin-top: 8px;
-    vertical-align: middle;
-  }
-
 
 /* =============== Project Image Styling =================== */
 
@@ -796,6 +775,40 @@
         width: 65px !important;
         margin: 10px 10px 0px 10px;
     }
+
+        /* Art Grid - Work Page*/
+                /* Victor Portrait - Square */
+            .artGridItem_1 {    
+                grid-column: 1 / span 8;    
+            }
+
+                /* NZ Animation - Landscape Rectangle */
+
+            .artGridItem_2 {
+                grid-column: 1 / span 8;    
+            }
+
+            /* Inktober Western - Landscape Rectangle  */
+            .artGridItem_3 {    
+                grid-column: 1 / span 8;    
+            }
+
+            /* Cat Holding Mug - Portrait Rectangle */
+            .artGridItem_4 {    
+                grid-column: 1 / span 8;    
+            }
+
+            /* Space Animation - Landscape Rectangle */
+            .artGridItem_5 {    
+                grid-column: 1 / span 8;    
+            }
+
+            /* Lady in Yellow */
+            .artGridItem_6 {
+                grid-column: 1 / span 8;    
+            }
+                
+
 }
 
 /* ================= Breaks at 509px (Mobile Medium) WIDTH ============== */
