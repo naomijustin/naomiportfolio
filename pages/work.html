@@ -59,7 +59,15 @@
         elmnt.style.backgroundColor = color;
     }
 
-    
+    // ================== Change Active Carousel Item on Click ==============
+    function changeActive(imageID) {
+      var a, item;
+      item = $(".artSlide");
+      for (a = 0; a < item.length; a++) {
+        item[a].classList.remove("active");
+      }
+      imageID.classList.add("active");
+    }
    
     
     $(document).ready(function(){
@@ -684,24 +692,25 @@
             <!-- ==================== Tab 2 - Gallery ==================== -->
             <div class="projectBG">
                 <div class="artGridContainer">
-                  <div class="artGridItem_1">
-                    <!-- <img src="https://naomijustin.com/images/work/art/VictorThumb1_400x400_min.png" alt="Victor Portrait" style="width: 100%"> -->
-                    <img type="button" class="btn imgBtn" id="tab2_proj1_read" data-toggle="modal" data-target="#modalTab2Proj1" src="https://naomijustin.com/images/work/art/VictorThumb1_400x400_min.png" alt="Victor Portrait" style="width: 100%">
+                  <div class="artGridItem_1">                    
+                    <img onclick="changeActive(getElementById('artSlide1'))" type="button" class="btn imgBtn" data-toggle="modal" data-target="#modalTab2Proj1" src="https://naomijustin.com/images/work/art/VictorThumb1_400x400_min.png" alt="Victor Portrait" style="width: 100%">
                   </div>
                   <div class="artGridItem_2">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/byjpMuwjJ5M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img onclick="changeActive(getElementById('artSlide2'))" type="button" class="btn imgBtn" data-toggle="modal" data-target="#modalTab2Proj1" src="https://naomijustin.com/images/work/art/tech2HNThumb_400x400_min.png" alt="tech2 Animation Youtube Link" style="width: 100%">
+                    <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/byjpMuwjJ5M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                   </div>
                   <div class="artGridItem_5">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WldQgZEfJ3E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img onclick="changeActive(getElementById('artSlide3'))" type="button" class="btn imgBtn" data-toggle="modal" data-target="#modalTab2Proj1" src="https://naomijustin.com/images/work/art/RocketThumb_400x284_min.png" alt="Space Rocket Animation Youtube Link" style="width: 100%">
+                    <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WldQgZEfJ3E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                   </div>
                   <div class="artGridItem_6">
-                    <img src="https://naomijustin.com/images/work/art/LadyInYellowThumb_400x283_min.png" alt="Lady In Yellow Portrait" style="width: 100%">
+                    <img onclick="changeActive(getElementById('artSlide4'))" type="button" class="btn imgBtn" data-toggle="modal" data-target="#modalTab2Proj1" src="https://naomijustin.com/images/work/art/LadyInYellowThumb_400x283_min.png" alt="Lady In Yellow Portrait" style="width: 100%">
                   </div>                    
                   <div class="artGridItem_3">
-                    <img src="https://naomijustin.com/images/work/art/InktoberWesternThumb1_400x400_min.png" alt="Inktober Western Artwork" style="width: 100%">
+                    <img onclick="changeActive(getElementById('artSlide5'))" type="button" class="btn imgBtn" data-toggle="modal" data-target="#modalTab2Proj1" src="https://naomijustin.com/images/work/art/InktoberWesternThumb1_400x400_min.png" alt="Inktober Western Artwork" style="width: 100%">
                   </div>
                   <div class="artGridItem_4">
-                    <img src="https://naomijustin.com/images/work/art/MorningGlowThumb_492x400_min.png" alt="Cat Holding Mug Artwork" style="width: 100%">
+                    <img onclick="changeActive(getElementById('artSlide6'))" type="button" class="btn imgBtn" data-toggle="modal" data-target="#modalTab2Proj1" src="https://naomijustin.com/images/work/art/MorningGlowThumb_492x400_min.png" alt="Cat Holding Mug Artwork" style="width: 100%">
                   </div>
                                   
                 </div>
@@ -730,7 +739,7 @@
                             <li data-target="#tab2_proj1" data-slide-to="5"></li>
                           </ol>
                           <div class="carousel-inner">
-                            <div class="carousel-item active">
+                            <div id="artSlide1" class="carousel-item artSlide active">
                               <img class="d-block w-100" src="https://naomijustin.com/images/work/art/VictorFull_700x700_min.png" alt="Victor Portrait">
                               <div class="carousel-caption d-none d-md-block">
                                   <h5>Victor Portrait</h5>
@@ -738,7 +747,7 @@
                               </div>                                                                                      
                             </div>
 
-                            <div class="carousel-item">
+                            <div id="artSlide2" class="carousel-item artSlide">
                               <div class="embed-responsive embed-responsive-16by9">
                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/byjpMuwjJ5M" allowfullscreen></iframe>
                               </div>
@@ -748,7 +757,7 @@
                               </div>                        
                             </div>
 
-                            <div class="carousel-item">
+                            <div id="artSlide3" class="carousel-item artSlide">
                               <div class="embed-responsive embed-responsive-16by9">
                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WldQgZEfJ3E" allowfullscreen></iframe>
                               </div>
@@ -758,21 +767,21 @@
                               </div>
                             </div>
                            
-                            <div class="carousel-item">
+                            <div id="artSlide4" class="carousel-item artSlide">
                               <img class="d-block w-100" src="https://naomijustin.com/images/work/art/LadyInYellowFull_700x495_min.png" alt="Lady In Yellow Portrait">
                               <div class="carousel-caption d-none d-md-block">
                                   <h5>Lady in Yellow</h5>
                                   <p>Rasterized illustration made with Procreate on the iPad Pro</p>
                               </div>
                             </div>
-                            <div class="carousel-item">
+                            <div id="artSlide5" class="carousel-item artSlide">
                               <img class="d-block w-100" src="https://naomijustin.com/images/work/art/InktoberWesternFull_700x700_min.png" alt="Inktober Western Black and White Drawing">
                               <div class="carousel-caption d-none d-md-block">
                                   <h5>Inktober Western</h5>
                                   <p>Rasterized illustration made with Procreate on the iPad Pro</p>
                               </div>
                             </div>
-                            <div class="carousel-item">
+                            <div id="artSlide6" class="carousel-item artSlide">
                               <img class="d-block w-100" src="https://naomijustin.com/images/work/art/MorningGlowFull_700x570_min.png" alt="Cat holding a mug starting into the morning glow drawing">
                               <div class="carousel-caption d-none d-md-block">
                                   <h5>Morning Glow</h5>
