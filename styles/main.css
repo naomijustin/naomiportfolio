@@ -125,7 +125,7 @@
 #workTabContainer {
     padding-top: 120px;
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(3, auto);
     align-self: center;
     grid-gap: 2px;
     max-width: 900px;
@@ -195,6 +195,32 @@
 }
 
 .projectText {
+    font-size: 16px;
+}
+
+.projRoleContainer {
+    margin-top: 10px;
+}
+
+.projRole {
+    border-radius: 20px;
+    background-color: #1270A5;
+    padding: 5px 7px 5px 7px;    
+    color: #E4DECB;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.projAward {
+    border-radius: 20px;
+    background-color: #C89B59;
+    padding: 5px 7px 5px 7px;    
+    color: #1A1A1A;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.awardIcon {
     font-size: 16px;
 }
 
