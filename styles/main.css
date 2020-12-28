@@ -299,6 +299,19 @@
 }
 
 
+.imgBtn {
+    background-color: transparent;
+    border-radius: 0px;
+    padding: 0px; 
+            
+}
+
+.imgBtn:hover {
+    background-color: #3F3F3F;
+    padding: 2px;      
+}
+
+
 /* =============== Project Image Styling =================== */
 
 .projectImageContainer {
@@ -330,7 +343,7 @@
 
 .modal-body {
     font-size: 16px;
-    max-height: 600px!important;
+    max-height: 810px!important;
     overflow-y: auto;
     text-align: left;
 }
@@ -340,6 +353,18 @@
     max-width: 700px;
     
 }
+
+/* Bootstrap Carousel Caption and Controls */
+
+.carousel-caption {
+    background-color: rgba(26, 26, 26, 0.55);
+    opacity: 0.7;
+    position: relative;
+    left: 0;
+    top: 0; 
+}
+
+
 
         /* ---- Project Content Lightbox Grid ---- */
 
