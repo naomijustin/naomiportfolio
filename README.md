@@ -28,7 +28,7 @@ This portfolio is to both demonstrate my skills and previous via the projects la
 * Ajax
  
 ## Launch
-* Launching site to domain naomijustin.com by end of December 2020.
+* Launching site to domain naomijustin.com by 14 January 2021.
  
 ## Illustrations
 ### Landing Page
