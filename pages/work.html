@@ -82,21 +82,12 @@
     ==============================================
 -->
 <main>
-  <!-- Work Lightbox
-  <div id="lightboxContainer">
-  <div id="workLightbox"></div>
-  <div id="workLightboxBG"></div>
-  </div> -->
-
-
-
 
     <div id="workContainer">
     
     <!-- Header Nav inserts here-->
     <div id="navPlaceholder"></div>
         
-
     <!-- Tab Buttons -->
     <div id="workTabContainer">
         <button class="tabBtn" id="defaultOpen" onclick="openTab('codeTab', this, '#E4DECB')">Web</button>
@@ -114,152 +105,431 @@
         <div id="codeTab" class="tabContent defaultOpen">
             <h2>Web</h2>
 
-            <!-- ==================== Tab 1 - Project 1 ==================== -->
-            <div class="projectBG">
-              <h3 class="projectTitle">Nigirizushi Tribute Page</h3>
-              <div class="projectContainer">
-                  <div class="workText">
-                    <!-- Skill Container -->
-                    <div>
-                      <span class="workSkill">HTML</span>
-                      <span class="workSkill">CSS</span>
-                  </div>
-                  
-                  <!-- Role -->
-                  <div class="projRoleContainer">
-                    <span class="projRole">UX/UI, Artist & Front End</span>                          
-                  </div>
+   <!-- ==================== Tab 1 - Project 3 ==================== -->
+   <div class="projectBG">
+    <h3 class="projectTitle">tech2/iinet Customer Portal Front End</h3>
+    <div class="projectContainer">
+        <div class="workText">
+          <!-- Skill Container -->
+          <div>
+            <span class="workSkill">HTML</span>
+            <span class="workSkill">CSS</span>
+            <span class="workSkill">JavaScript</span>
+            <span class="workSkill">jQuery</span>
+            <span class="workSkill">Bootstrap</span>
+            <span class="workSkill">Ajax</span>
+            <span class="workSkill">Procreate</span>
+        </div>  
 
-                  <!-- Project Text -->
-                    <p class="projectText"><br>A clean tribute page that is clean and displays art that is created out of SVG code and clipping paths.</p>
-                    
-                    <!-- Project Links-->  
-                      <div>
-                        <!-- Demo -->  
-                          <a class="demoCodeBtn" href="https://naomijustin.github.io/nigirizushi/" target="_blank">Demo&ensp;<i class="fas fa-desktop"></i></a>&nbsp;
-                        <!-- Code -->
-                          <a class="demoCodeBtn" href="https://github.com/naomijustin/nigirizushi" target="_blank">Code&ensp;<i class="fas fa-code"></i></a>
+        <!-- Role -->
+      <div class="projRoleContainer">
+        <span class="projRole">UX/UI & Front End</span>                          
+      </div>
+
+      <p class="projectText"><br>Existing tech2/iinet Portal needs to be upgraded to a modern look and feel, so it was on brand and responsive, while still allowing all functionality to still remain intact and create a smooth transition between old and new look for existing users.<br><em class="subText">Unable to show code or demo due to privacy of tech2.</em></p>                              
+
+      <!-- Read More Button -->
+        <div class="readMoreContainer">
+          <button type="button" class="readMoreBtn btn btn-primary" id="tab1_proj3_read" data-toggle="modal" data-target="#modalTab1Proj3">Read More&ensp;<i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        </div>
+        <div class="workImage">
+            <div class="projectImageContainer">
+                
+                <!-- Carousel Tab 1 Project 3 -->
+                <div id="tab1_proj3" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                      <li data-target="#tab1_proj3" data-slide-to="0" class="active"></li>
+                      <li data-target="#tab1_proj3" data-slide-to="1"></li>
+                      <li data-target="#tab1_proj3" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Caption</h5>
+                            <p>Subtitle</p>
+                        </div>
                       </div>
-
-                    <!-- Read More Button -->
-                      <div class="readMoreContainer">
-                        <button type="button" class="readMoreBtn btn btn-primary" id="tab1_proj1_read" data-toggle="modal" data-target="#modalTab1Proj1">Read More&ensp;<i class="fas fa-chevron-right"></i></button>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Caption</h5>
+                            <p>Subtitle</p>
+                        </div>
                       </div>
-
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Caption</h5>
+                            <p>Subtitle</p>
+                        </div>
+                      </div>
                     </div>
-                     
-                  <div class="workImage">
-                      <div class="projectImageContainer">
-
-                         <!-- Carousel Tab 1 Project 2 -->
-                          <div id="tab1_proj1" class="carousel slide" data-ride="carousel" data-interval="false">
-                              <ol class="carousel-indicators">
-                                <li data-target="#tab1_proj1" data-slide-to="0" class="active"></li>
-                                <li data-target="#tab1_proj1" data-slide-to="1"></li>                                
-                              </ol>
-                              <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                  <img class="d-block w-100" src="https://naomijustin.com/images/work/web/NigiriThumb1_500x300_min.png" alt="Nigiri Tribute Landing">
-                                </div>
-                                <div class="carousel-item">
-                                  <img class="d-block w-100" src="https://naomijustin.com/images/work/web/NigiriThumb2_500x300_min.png" alt="Nigiri Tribute Content Section">                                  
-                                </div>        
-                              </div>
-                              <a class="carousel-control-prev" href="#tab1_proj1" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                              </a>
-                              <a class="carousel-control-next" href="#tab1_proj1" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                              </a>
-                            </div>
-
-                      </div>
+                    <a class="carousel-control-prev" href="#tab1_proj3" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#tab1_proj3" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
                   </div>
-              </div>
+
+            </div>                        
+        </div>
+    </div>
+</div>
+
+    <!-- Bootstrap Modal Tab 1, Project 3 -->
+    <div class="modal fade" id="modalTab1Proj3" tabindex="-1" role="dialog" aria-labelledby="modalTab1Proj3Title" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTab1Proj3Title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Tab 1 Proj 3
+          </div>
+        </div>
+      </div>
+    </div>    
+
+
+    <!-- ==================== Tab 1 - Project 6 ==================== -->
+    <div class="projectBG">
+      <h3 class="projectTitle">tech2 Streamline.net</h3>
+          <div class="projectContainer">
+              <div class="workText">
+                <!-- Skill Container -->
+                <div>
+                  <span class="workSkill">Axure</span>
+                  <span class="workSkill">DevOps</span>
+                  <span class="workSkill">Procreate</span>                            
+              </div>  
+
+              <!-- Role -->
+          <div class="projRoleContainer">
+            <span class="projRole">UX/UI</span>                          
           </div>
 
-              <!-- Bootstrap Modal Tab 1, Project 1 -->
-                      <div class="modal fade" id="modalTab1Proj1" tabindex="-1" role="dialog" aria-labelledby="modalTab1Proj1Title" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered " role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="modalTab1Proj1Title">Tribute: The Art of Nigirizushi</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              <!-- Grid -->  
-                              <div class="projectGridLB">
-                                <div class="projectGridItem1">
-                                  <em>Introduction</em><br>
-                                  Aim is to experiment in creation of web illustrations purely using SVG Paths, Clipping Paths and Linear Gradients in the form of a tribute page.
-                              </div>
-                              
-                              <br>                                  
-                              
-                              <div class="projectGridItem1">
-                                  <em>Page Mockup</em><br>
-                                  Mockup after a few variations of style, deciding on layout of page and design of code illustrations.<br>                                  
-                                </div>
-                                <div class="projectGridItem1">
-                                  <img src="https://naomijustin.com/images/work/web/NigiriFull1_670x500_min.png" alt="Sketched mockup of the Nigirizushi page">
-                                </div>
-                              
-                                <br>
-                              
-                                <div class="projectGridItem1">
-                                  <em>Sketch vs Code Illustration</em>
-                                </div>
-                                <div class="projectGridItem1">
-                                  <img src="https://naomijustin.com/images/work/web/NigiriFull2_625x500_min.png" alt="Nigiri Sketch contrasted with code illustation">
-                                </div>
-                                <div class="projectGridItem1">
-                                  <img src="https://naomijustin.com/images/work/web/NigiriFull3_625x500_min.png" alt="Fish Egg Nigiri Sketch contrasted with code illustation">
-                                </div>
+              <!-- Project Text -->
+                <p class="projectText"><br>Test text<br><em class="subText">Unable to show code or demo due to privacy of tech2.</em></p>                
 
-                                <br>
+            <!-- Read More Button -->
+              <div class="readMoreContainer">
+                <button type="button" class="readMoreBtn btn btn-primary" id="tab1_proj6_read" data-toggle="modal" data-target="#modalTab1Proj6">Read More&ensp;<i class="fas fa-chevron-right"></i></button>
+              </div>
 
-                                <div class="projectGridItem1">
-                                  <em>Colour</em><br>
-                                  Colourized these illustrations with linear gradients to create the illusion of a 3D shading. Selectively using accented colours that were bold against the grey scale background to make these images stand out. 
-                                </div>
-                                <div class="projectGridItem1">
-                                  <img src="https://naomijustin.com/images/work/web/NigiriFull4_500x333_min.png" alt="Nigiri Code Illustration with colour">
-                                </div>
-                                <div class="projectGridItem1">
-                                  <img src="https://naomijustin.com/images/work/web/NigiriFull5_500x304_min.png" alt="Fish Egg Nigiri Code Illustration with colour">
-                                </div>
-
-                                <br>
-
-                                <div class="projectGridItem1">
-                                  <em>Technologies</em>
-                                </div>
-                                <div class="projectGridItem2">
-                                  &#8226; HTML<br>
-                                  &#8226; CSS<br>
-                                  &#8226; SVG Path Builder (by Anthony Dugios)&emsp;<a href="https://codepen.io/anthonydugois/pen/mewdyZ" target="_blank"><i class="fas fa-external-link-alt socialMediaIcon"></i></a>
-                                </div>
-                                <div class="projectGridItem3">
-                                  &#8226; Get Waves&emsp;<a href="https://getwaves.io/" target="_blank"><i class="fas fa-external-link-alt socialMediaIcon"></i></a><br>
-                                  &#8226; Blobmaker&emsp;<a href="https://www.blobmaker.app/" target="_blank"><i class="fas fa-external-link-alt socialMediaIcon"></i></a><br>
-                                  &#8226; CSS Grid                                 
-                                </div>
-                        
-                              </div>
-                              
-                              
-                            
-                            
-                            </div>
+              </div>
+              <div class="workImage">
+                  <div class="projectImageContainer">
+                      
+                      <!-- Carousel Tab 3 Project 1 -->
+                   <div id="tab1_proj6" class="carousel slide" data-ride="carousel" data-interval="false">
+                      <ol class="carousel-indicators">
+                        <li data-target="#tab1_proj6" data-slide-to="0" class="active"></li>
+                        <li data-target="#tab1_proj6" data-slide-to="1"></li>
+                        <li data-target="#tab1_proj6" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="First slide">
+                          <div class="carousel-caption d-none d-md-block">
+                              <h5>Caption</h5>
+                              <p>Subtitle</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="Second slide">
+                          <div class="carousel-caption d-none d-md-block">
+                              <h5>Caption</h5>
+                              <p>Subtitle</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="Second slide">
+                          <div class="carousel-caption d-none d-md-block">
+                              <h5>Caption</h5>
+                              <p>Subtitle</p>
                           </div>
                         </div>
                       </div>
+                      <a class="carousel-control-prev" href="#tab1_proj6" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#tab1_proj6" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+
+                  </div>
+              </div>
+          </div>
+  </div>
+
+    <!-- Bootstrap Modal Tab 1, Project 6 -->
+    <div class="modal fade" id="modalTab1Proj6" tabindex="-1" role="dialog" aria-labelledby="modalTab1Proj6Title" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTab1Proj6Title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Tab 1 Proj 6
+          </div>
+        </div>
+      </div>
+    </div>
 
 
+<!-- ==================== Tab 1 - Project 1 ==================== -->
+<div class="projectBG">
+  <h3 class="projectTitle">Nigirizushi Tribute Page</h3>
+  <div class="projectContainer">
+      <div class="workText">
+        <!-- Skill Container -->
+        <div>
+          <span class="workSkill">HTML</span>
+          <span class="workSkill">CSS</span>
+      </div>
+      
+      <!-- Role -->
+      <div class="projRoleContainer">
+        <span class="projRole">UX/UI, Artist & Front End</span>                          
+      </div>
+
+      <!-- Project Text -->
+        <p class="projectText"><br>A clean tribute page that is clean and displays art that is created out of SVG code and clipping paths.</p>
+        
+        <!-- Project Links-->  
+          <div>
+            <!-- Demo -->  
+              <a class="demoCodeBtn" href="https://naomijustin.github.io/nigirizushi/" target="_blank">Demo&ensp;<i class="fas fa-desktop"></i></a>&nbsp;
+            <!-- Code -->
+              <a class="demoCodeBtn" href="https://github.com/naomijustin/nigirizushi" target="_blank">Code&ensp;<i class="fas fa-code"></i></a>
+          </div>
+
+        <!-- Read More Button -->
+          <div class="readMoreContainer">
+            <button type="button" class="readMoreBtn btn btn-primary" id="tab1_proj1_read" data-toggle="modal" data-target="#modalTab1Proj1">Read More&ensp;<i class="fas fa-chevron-right"></i></button>
+          </div>
+
+        </div>
+         
+      <div class="workImage">
+          <div class="projectImageContainer">
+
+             <!-- Carousel Tab 1 Project 2 -->
+              <div id="tab1_proj1" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <ol class="carousel-indicators">
+                    <li data-target="#tab1_proj1" data-slide-to="0" class="active"></li>
+                    <li data-target="#tab1_proj1" data-slide-to="1"></li>                                
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="https://naomijustin.com/images/work/web/NigiriThumb1_500x300_min.png" alt="Nigiri Tribute Landing">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="https://naomijustin.com/images/work/web/NigiriThumb2_500x300_min.png" alt="Nigiri Tribute Content Section">                                  
+                    </div>        
+                  </div>
+                  <a class="carousel-control-prev" href="#tab1_proj1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#tab1_proj1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+  <!-- Bootstrap Modal Tab 1, Project 1 -->
+          <div class="modal fade" id="modalTab1Proj1" tabindex="-1" role="dialog" aria-labelledby="modalTab1Proj1Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered " role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTab1Proj1Title">Tribute: The Art of Nigirizushi</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- Grid -->  
+                  <div class="projectGridLB">
+                    <div class="projectGridItem1">
+                      <em>Introduction</em><br>
+                      Aim is to experiment in creation of web illustrations purely using SVG Paths, Clipping Paths and Linear Gradients in the form of a tribute page.
+                  </div>
+                  
+                  <br>                                  
+                  
+                  <div class="projectGridItem1">
+                      <em>Page Mockup</em><br>
+                      Mockup after a few variations of style, deciding on layout of page and design of code illustrations.<br>                                  
+                    </div>
+                    <div class="projectGridItem1">
+                      <img src="https://naomijustin.com/images/work/web/NigiriFull1_670x500_min.png" alt="Sketched mockup of the Nigirizushi page">
+                    </div>
+                  
+                    <br>
+                  
+                    <div class="projectGridItem1">
+                      <em>Sketch vs Code Illustration</em>
+                    </div>
+                    <div class="projectGridItem1">
+                      <img src="https://naomijustin.com/images/work/web/NigiriFull2_625x500_min.png" alt="Nigiri Sketch contrasted with code illustation">
+                    </div>
+                    <div class="projectGridItem1">
+                      <img src="https://naomijustin.com/images/work/web/NigiriFull3_625x500_min.png" alt="Fish Egg Nigiri Sketch contrasted with code illustation">
+                    </div>
+
+                    <br>
+
+                    <div class="projectGridItem1">
+                      <em>Colour</em><br>
+                      Colourized these illustrations with linear gradients to create the illusion of a 3D shading. Selectively using accented colours that were bold against the grey scale background to make these images stand out. 
+                    </div>
+                    <div class="projectGridItem1">
+                      <img src="https://naomijustin.com/images/work/web/NigiriFull4_500x333_min.png" alt="Nigiri Code Illustration with colour">
+                    </div>
+                    <div class="projectGridItem1">
+                      <img src="https://naomijustin.com/images/work/web/NigiriFull5_500x304_min.png" alt="Fish Egg Nigiri Code Illustration with colour">
+                    </div>
+
+                    <br>
+
+                    <div class="projectGridItem1">
+                      <em>Technologies</em>
+                    </div>
+                    <div class="projectGridItem2">
+                      &#8226; HTML<br>
+                      &#8226; CSS<br>
+                      &#8226; SVG Path Builder (by Anthony Dugios)&emsp;<a href="https://codepen.io/anthonydugois/pen/mewdyZ" target="_blank"><i class="fas fa-external-link-alt socialMediaIcon"></i></a>
+                    </div>
+                    <div class="projectGridItem3">
+                      &#8226; Get Waves&emsp;<a href="https://getwaves.io/" target="_blank"><i class="fas fa-external-link-alt socialMediaIcon"></i></a><br>
+                      &#8226; Blobmaker&emsp;<a href="https://www.blobmaker.app/" target="_blank"><i class="fas fa-external-link-alt socialMediaIcon"></i></a><br>
+                      &#8226; CSS Grid                                 
+                    </div>
+            
+                  </div>
+                  
+                  
+                
+                
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+<!-- ==================== Tab 1 - Project 5 ==================== -->
+<div class="projectBG">
+  <h3 class="projectTitle">tech2 EDMs</h3>
+  <div class="projectContainer">
+      <div class="workText">
+        <!-- Skill Container -->
+        <div>
+          <span class="workSkill">HTML</span>
+          <span class="workSkill">CSS</span>
+      </div>  
+
+      <!-- Role -->
+    <div class="projRoleContainer">
+      <span class="projRole">Front End</span>                          
+    </div>
+
+      <!-- Project Text -->
+        <p class="projectText"><br>Test text<br><em class="subText">Unable to show code or demo due to privacy of tech2.</em></p>
+       
+      <!-- Read More Button -->
+        <div class="readMoreContainer">
+          <button type="button" class="readMoreBtn btn btn-primary" id="tab1_proj5_read" data-toggle="modal" data-target="#modalTab1Proj5">Read More&ensp;<i class="fas fa-chevron-right"></i></button>
+        </div>
+
+      </div>
+      <div class="workImage">
+          <div class="projectImageContainer">
+              
+              <!-- Carousel Tab 1 Project 5 -->
+              <div id="tab1_proj5" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <ol class="carousel-indicators">
+                    <li data-target="#tab1_proj5" data-slide-to="0" class="active"></li>
+                    <li data-target="#tab1_proj5" data-slide-to="1"></li>
+                    <li data-target="#tab1_proj5" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="First slide">
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5>Caption</h5>
+                          <p>Subtitle</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="Second slide">
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5>Caption</h5>
+                          <p>Subtitle</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="Second slide">
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5>Caption</h5>
+                          <p>Subtitle</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#tab1_proj5" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#tab1_proj5" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Bootstrap Modal Tab 1, Project 5 -->
+<div class="modal fade" id="modalTab1Proj5" tabindex="-1" role="dialog" aria-labelledby="modalTab1Proj5Title" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTab1Proj5Title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="fas fa-times"></i></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Tab 1 Proj 5
+      </div>
+    </div>
+  </div>
+</div>
+
+            
 
 
 
@@ -312,28 +582,20 @@
                                 <li data-target="#tab1_proj2" data-slide-to="0" class="active"></li>
                                 <li data-target="#tab1_proj2" data-slide-to="1"></li>
                                 <li data-target="#tab1_proj2" data-slide-to="2"></li>
+                                <li data-target="#tab1_proj2" data-slide-to="3"></li>
                               </ol>
                               <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                  <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="First slide">
-                                  <div class="carousel-caption d-none d-md-block">
-                                      <h5>Caption</h5>
-                                      <p>Subtitle</p>
-                                  </div>
+                                  <img class="d-block w-100" src="https://naomijustin.com/images/work/web/HBC1Thumb_500x300_min.png" alt="Haberfield Baptist Landing Page">                                  
                                 </div>
                                 <div class="carousel-item">
-                                  <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="Second slide">
-                                  <div class="carousel-caption d-none d-md-block">
-                                      <h5>Caption</h5>
-                                      <p>Subtitle</p>
-                                  </div>
+                                  <img class="d-block w-100" src="https://naomijustin.com/images/work/web/HBC2Thumb_500x300_min.png" alt="Haberfield Baptist About Us Page">                                  
                                 </div>
                                 <div class="carousel-item">
-                                  <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="Second slide">
-                                  <div class="carousel-caption d-none d-md-block">
-                                      <h5>Caption</h5>
-                                      <p>Subtitle</p>
-                                  </div>
+                                  <img class="d-block w-100" src="https://naomijustin.com/images/work/web/HBC3Thumb_500x300_min.png" alt="Haberfield Baptist Contact Us Page">                                  
+                                </div>
+                                <div class="carousel-item">
+                                  <img class="d-block w-100" src="https://naomijustin.com/images/work/web/HBC4Thumb_500x300_min.png" alt="Haberfield Baptist Youtube Channel">                                  
                                 </div>
                               </div>
                               <a class="carousel-control-prev" href="#tab1_proj2" role="button" data-slide="prev">
@@ -368,316 +630,16 @@
                 </div>
               </div>
 
-            <!-- ==================== Tab 1 - Project 3 ==================== -->
-            <div class="projectBG">
-                <h3 class="projectTitle">tech2/iinet Customer Portal Front End</h3>
-                <div class="projectContainer">
-                    <div class="workText">
-                      <!-- Skill Container -->
-                      <div>
-                        <span class="workSkill">HTML</span>
-                        <span class="workSkill">CSS</span>
-                        <span class="workSkill">JavaScript</span>
-                        <span class="workSkill">jQuery</span>
-                        <span class="workSkill">Bootstrap</span>
-                        <span class="workSkill">Ajax</span>
-                        <span class="workSkill">Procreate</span>
-                    </div>  
-
-                    <!-- Role -->
-                  <div class="projRoleContainer">
-                    <span class="projRole">UX/UI & Front End</span>                          
-                  </div>
-
-
-                  <p class="projectText"><br>Existing tech2/iinet Portal needs to be upgraded to a modern look and feel, so it was on brand and responsive, while still allowing all functionality to still remain intact and create a smooth transition between old and new look for existing users.</p>
-                          
-                      
-
-                    <!-- Project Links-->  
-                    <div>
-                      <!-- Demo -->  
-                        <a class="demoCodeBtn" href="#" target="_blank">Demo&ensp;<i class="fas fa-desktop"></i></a>&nbsp;
-                      <!-- Code -->
-                        <a class="demoCodeBtn" href="#" target="_blank">Code&ensp;<i class="fas fa-code"></i></a>
-                    </div>
-
-                  <!-- Read More Button -->
-                    <div class="readMoreContainer">
-                      <button type="button" class="readMoreBtn btn btn-primary" id="tab1_proj3_read" data-toggle="modal" data-target="#modalTab1Proj3">Read More&ensp;<i class="fas fa-chevron-right"></i></button>
-                    </div>
-
-
-                    </div>
-                    <div class="workImage">
-                        <div class="projectImageContainer">
-                            
-                            <!-- Carousel Tab 1 Project 3 -->
-                            <div id="tab1_proj3" class="carousel slide" data-ride="carousel" data-interval="false">
-                                <ol class="carousel-indicators">
-                                  <li data-target="#tab1_proj3" data-slide-to="0" class="active"></li>
-                                  <li data-target="#tab1_proj3" data-slide-to="1"></li>
-                                  <li data-target="#tab1_proj3" data-slide-to="2"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="First slide">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Caption</h5>
-                                        <p>Subtitle</p>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="Second slide">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Caption</h5>
-                                        <p>Subtitle</p>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="Second slide">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Caption</h5>
-                                        <p>Subtitle</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#tab1_proj3" role="button" data-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#tab1_proj3" role="button" data-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Next</span>
-                                </a>
-                              </div>
-
-                        </div>                        
-                    </div>
-                </div>
-            </div>
-
-                <!-- Bootstrap Modal Tab 1, Project 3 -->
-                <div class="modal fade" id="modalTab1Proj3" tabindex="-1" role="dialog" aria-labelledby="modalTab1Proj3Title" aria-hidden="true">
-                  <div class="modal-dialog  modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="modalTab1Proj3Title">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        Tab 1 Proj 3
-                      </div>
-                    </div>
-                  </div>
-                </div>    
-            
-            
+         
             
 
 
-            <!-- ==================== Tab 1 - Project 5 ==================== -->
-            <div class="projectBG">
-                <h3 class="projectTitle">tech2 EDMs</h3>
-                <div class="projectContainer">
-                    <div class="workText">
-                      <!-- Skill Container -->
-                      <div>
-                        <span class="workSkill">HTML</span>
-                        <span class="workSkill">CSS</span>
-                    </div>  
-
-                    <!-- Role -->
-                  <div class="projRoleContainer">
-                    <span class="projRole">Front End</span>                          
-                  </div>
-
-                    <!-- Project Text -->
-                      <p class="projectText"><br>Test text</p>
-
-                      <!-- Project Links-->  
-                      <div>
-                        <!-- Demo -->  
-                          <a class="demoCodeBtn" href="#" target="_blank">Demo&ensp;<i class="fas fa-desktop"></i></a>&nbsp;
-                        <!-- Code -->
-                          <a class="demoCodeBtn" href="#" target="_blank">Code&ensp;<i class="fas fa-code"></i></a>
-                      </div>
-
-                    <!-- Read More Button -->
-                      <div class="readMoreContainer">
-                        <button type="button" class="readMoreBtn btn btn-primary" id="tab1_proj5_read" data-toggle="modal" data-target="#modalTab1Proj5">Read More&ensp;<i class="fas fa-chevron-right"></i></button>
-                      </div>
-
-                    </div>
-                    <div class="workImage">
-                        <div class="projectImageContainer">
-                            
-                            <!-- Carousel Tab 1 Project 5 -->
-                            <div id="tab1_proj5" class="carousel slide" data-ride="carousel" data-interval="false">
-                                <ol class="carousel-indicators">
-                                  <li data-target="#tab1_proj5" data-slide-to="0" class="active"></li>
-                                  <li data-target="#tab1_proj5" data-slide-to="1"></li>
-                                  <li data-target="#tab1_proj5" data-slide-to="2"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="First slide">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Caption</h5>
-                                        <p>Subtitle</p>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="Second slide">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Caption</h5>
-                                        <p>Subtitle</p>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="Second slide">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Caption</h5>
-                                        <p>Subtitle</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#tab1_proj5" role="button" data-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#tab1_proj5" role="button" data-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Next</span>
-                                </a>
-                              </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-              <!-- Bootstrap Modal Tab 1, Project 5 -->
-              <div class="modal fade" id="modalTab1Proj5" tabindex="-1" role="dialog" aria-labelledby="modalTab1Proj5Title" aria-hidden="true">
-                <div class="modal-dialog  modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="modalTab1Proj5Title">Modal title</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      Tab 1 Proj 5
-                    </div>
-                  </div>
-                </div>
-              </div>
+            
 
 
 
 
-            <!-- ==================== Tab 1 - Project 6 ==================== -->
-            <div class="projectBG">
-              <h3 class="projectTitle">Streamline.net</h3>
-                  <div class="projectContainer">
-                      <div class="workText">
-                        <!-- Skill Container -->
-                        <div>
-                          <span class="workSkill">Axure</span>
-                          <span class="workSkill">DevOps</span>
-                          <span class="workSkill">Procreate</span>                            
-                      </div>  
-
-                      <!-- Role -->
-                  <div class="projRoleContainer">
-                    <span class="projRole">UX/UI</span>                          
-                  </div>
-
-                      <!-- Project Text -->
-                        <p class="projectText"><br>Test text</p>
-
-                        <!-- Project Links-->  
-                      <div>
-                        <!-- Demo -->  
-                          <a class="demoCodeBtn" href="#" target="_blank">Demo&ensp;<i class="fas fa-desktop"></i></a>&nbsp;
-                        <!-- Code -->
-                          <a class="demoCodeBtn" href="#" target="_blank">Code&ensp;<i class="fas fa-code"></i></a>
-                      </div>
-
-                    <!-- Read More Button -->
-                      <div class="readMoreContainer">
-                        <button type="button" class="readMoreBtn btn btn-primary" id="tab1_proj6_read" data-toggle="modal" data-target="#modalTab1Proj6">Read More&ensp;<i class="fas fa-chevron-right"></i></button>
-                      </div>
-
-
-                      </div>
-                      <div class="workImage">
-                          <div class="projectImageContainer">
-                              
-                              <!-- Carousel Tab 3 Project 1 -->
-                           <div id="tab1_proj6" class="carousel slide" data-ride="carousel" data-interval="false">
-                              <ol class="carousel-indicators">
-                                <li data-target="#tab1_proj6" data-slide-to="0" class="active"></li>
-                                <li data-target="#tab1_proj6" data-slide-to="1"></li>
-                                <li data-target="#tab1_proj6" data-slide-to="2"></li>
-                              </ol>
-                              <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                  <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="First slide">
-                                  <div class="carousel-caption d-none d-md-block">
-                                      <h5>Caption</h5>
-                                      <p>Subtitle</p>
-                                  </div>
-                                </div>
-                                <div class="carousel-item">
-                                  <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="Second slide">
-                                  <div class="carousel-caption d-none d-md-block">
-                                      <h5>Caption</h5>
-                                      <p>Subtitle</p>
-                                  </div>
-                                </div>
-                                <div class="carousel-item">
-                                  <img class="d-block w-100" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="Second slide">
-                                  <div class="carousel-caption d-none d-md-block">
-                                      <h5>Caption</h5>
-                                      <p>Subtitle</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <a class="carousel-control-prev" href="#tab1_proj6" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                              </a>
-                              <a class="carousel-control-next" href="#tab1_proj6" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                              </a>
-                            </div>
-
-                          </div>
-                      </div>
-                  </div>
-          </div>
-
-            <!-- Bootstrap Modal Tab 1, Project 6 -->
-            <div class="modal fade" id="modalTab1Proj6" tabindex="-1" role="dialog" aria-labelledby="modalTab1Proj6Title" aria-hidden="true">
-              <div class="modal-dialog  modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="modalTab1Proj6Title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    Tab 1 Proj 6
-                  </div>
-                </div>
-              </div>
-            </div>
+            
 
 
         </div>
@@ -726,7 +688,7 @@
                           <span aria-hidden="true"><i class="fas fa-times"></i></span>
                         </button>
                       </div>
-                      <div class="modal-body" style="overflow-y: fit;">
+                      <div class="modal-body" style="overflow-y: fit; max-height: 810px; height: auto">
                         
                         <!-- Carousel Tab 2 Project 1 -->
                         <div id="tab2_proj1" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -832,7 +794,8 @@
                         </div>
                         
                         <!-- Project Text -->
-                            <p class="projectText"><br>Faux 3D rendered in 2D Space</p>
+                            <p class="projectText"><br>A 2D game creating the illusion of faux 3D Space. 
+                              You're the boss of a failing company, who has to take on multiple responsibilities just to keep the business afloat, but the stress is getting to you. Keep on top of daily tasks before the business collapses.</p>
                               <!-- Project Links-->  
                               <div>
                                 <!-- Demo -->  
@@ -894,14 +857,104 @@
                               <div class="modal-dialog  modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                   <div class="modal-header">
-                                    <h5 class="modal-title" id="modalTab3Proj1Title">Modal title</h5>
+                                    <h5 class="modal-title" id="modalTab3Proj1Title">I'm The Boss Game</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                       <span aria-hidden="true"><i class="fas fa-times"></i></span>
                                     </button>
                                   </div>
                                   <div class="modal-body">
-                                    Tab 3 Proj 1
-                                  </div>
+                                    <!-- Grid -->
+                                    <div class="projectGridLB">
+                                      <div class="projectGridItem1">
+                                        <em>Game Description</em><br>
+                                        You're the boss of a failing company, who has to take on multiple responsibilities just to keep the business afloat, but the stress is getting to you. Keep on top of daily tasks before the business collapses.                                        
+                                        
+                                      </div>
+
+                                      <div class="projectGridItem1">
+                                        <img width="100%" src="https://naomijustin.com/images/work/game/ImBossFull1_700x394_min.png" alt="I'm The Boss Game Title Screen">
+                                        <br><br>
+                                      </div>
+
+                                      <div class="projectGridItem1">
+                                        <em>Overview of Creation</em><br>
+                                        Created in the January 2020 Global Game Jam at the AIE (Academy of Interactive Entertainment) Jam Site, prompt give was "Repair". 
+                                        <br><br>
+                                        We worked in a team of 2, I was the Game Artist and my colleague was the Game Programmer. We jointly worked on the design of the playability of the game.
+                                        <br><br>
+                                        We were inspired by the retro, mundane atmosphere and colour palette of the 1999 film “Officespace”, which parodies corporate office culture.                                      
+                                        <br><br>
+                                      </div>
+
+                                      <div class="projectGridItem1">
+                                        <em>Logistics</em><br>
+                                        We decided to experiment and make a 2D game creating the illusion of faux 3D Space, in order to create a sense of a maze of corridors and cubicles, where the only landmarks are water coolers in the office.  
+                                        All assets I created were 2D, and depending on the camera angle would either change at a 90 degree angle or always be facing the camera.
+                                        I also created and animated a short opening sequence to give some context to the player.
+                                        <br><br>
+                                      </div>
+
+                                      <!-- Insert tv -->
+                                      <div class="projectGridItem1">
+                                        <img width="100%" src="https://naomijustin.com/images/work/game/ImBossFull5_700x394_min.png" alt="I'm The Boss Game Title Screen">
+                                        <br><br>
+                                      </div>
+
+                                      <div class="projectGridItem1">
+                                        <em>Artistic Design</em><br>
+                                        All assets were made using Aseprite via Astropad (Screen Mirroring) through the iPad Pro.
+                                        <br><br>
+                                        For colours, I decided to stay true to the genre and create a very bland, grey/brown theme, the only splash of colour being the occasional tie, suspenders, computer screen or the bosses expensive classic Casio watch.
+                                        <br><br>
+                                        We kept the lighting quite dark as to feel a bit claustrophobic, and to create a more challenging navigation around the office for the player.
+                                        <br><br>
+                                        For atmosphere, I found a great 16-bit style soundtrack and sourced copyright free in sounds of typing, phones ringing, as well as us recording and adding in the occasional grumble from the main character about a memo or an overdue TPS Report.
+                                        <br><br>
+                                      </div>
+
+                                      <div class="projectGridItem1">
+                                        <img width="100%" src="https://naomijustin.com/images/work/game/ImBossFull2_700x394_min.png" alt="I'm The Boss Game Title Screen">
+                                        <br><br>
+                                      </div>
+
+                                      <div class="projectGridItem1">
+                                        <img width="100%" src="https://naomijustin.com/images/work/game/ImBossFull3_700x394_min.png" alt="I'm The Boss Game Title Screen">
+                                        <br><br>
+                                      </div>
+
+                                      <div class="projectGridItem1">
+                                        I designed the health bar or “Sweat Meter'' down the bottom left corner of the screen to be different from a typical bar that fills up. We wanted to not give the player too much information to create some suspense on if they will get to the next task in time or not, so we opted for 25% increments. I created the boss's face to slowly be drowning in sweat, filling up ends the game. 
+                                        I felt it was important to add a unique humorous aspect that is typically just a graphical UI element, but I feel due to it always being visible and checked consistently by the player, add some charm and humour to the game.
+                                      </div>
+
+                                      <div class="projectGridItem1">
+                                        <img width="100%" src="https://naomijustin.com/images/work/game/ImBossFull4_700x145_min.png" alt="I'm The Boss Game Title Screen">
+                                        <br><br>
+                                      </div>
+
+                                      <div class="projectGridItem1">
+                                        <em>Final Thoughts</em><br>
+                                        All in all, we were happy with the result we created in such a short amount of time and being in a team of 2.
+                                      </div>
+
+                                       
+                                        
+                                        
+
+                                        
+                                        
+                                        
+
+                                      
+                                      
+                                      
+                                    </div>
+                                    
+
+
+
+                                   
+                                    </div> 
                                 </div>
                               </div>
                             </div>
