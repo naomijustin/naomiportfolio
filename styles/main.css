@@ -220,8 +220,10 @@
     font-weight: 600;
 }
 
-.awardIcon {
+.subText {    
+    color: rgba(200, 194, 178, 0.5);
     font-size: 16px;
+    
 }
 
 .demoCodeBtn {
@@ -343,7 +345,9 @@
 
 .modal-body {
     font-size: 16px;
-    max-height: 810px!important;
+    height: 80vh;
+    max-height: 810px;
+    min-height: 180px!important; 
     overflow-y: auto;
     text-align: left;
 }
@@ -364,15 +368,16 @@
     top: 0; 
 }
 
-/* .carousel-control-prev-icon {
-    background-color: rgba(26, 26, 26, 0.25);
-    border-radius: 20px;    
+/* .carousel-control-prev, 
+.carousel-control-next {
+    background-color: rgba(26, 26, 26, 0.55);    
 }
 
-.carousel-control-next {
-    background-color: rgba(26, 26, 26, 0.25);    
+.carousel-control-prev:hover, 
+.carousel-control-next:hover {
+    background-color: rgba(26, 26, 26, 0);
+       
 } */
-
 
         /* ---- Project Content Lightbox Grid ---- */
 
@@ -380,6 +385,7 @@
             display: grid;
             grid-template-columns: auto auto;
             grid-gap: 10px;
+            
         }
 
         /* Span Two Columns */
@@ -407,7 +413,7 @@
         .projectGridLB img {
             border: 1px solid #64625B;
             box-shadow: 5px 5px #E4DECB;
-            max-width: 500px;
+            max-width: 600px;
             width: 70vw;
             min-width: 200px;
         }
