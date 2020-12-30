@@ -368,16 +368,16 @@
     top: 0; 
 }
 
-/* .carousel-control-prev, 
+.carousel-control-prev, 
 .carousel-control-next {
-    background-color: rgba(26, 26, 26, 0.55);    
+    background-color: rgba(26, 26, 26, 0.3);    
 }
 
 .carousel-control-prev:hover, 
 .carousel-control-next:hover {
-    background-color: rgba(26, 26, 26, 0);
+    background-color: rgba(26, 26, 26, 0.5);
        
-} */
+}
 
         /* ---- Project Content Lightbox Grid ---- */
 
