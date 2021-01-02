@@ -118,6 +118,7 @@
             <span class="workSkill">jQuery</span>
             <span class="workSkill">Bootstrap</span>
             <span class="workSkill">Ajax</span>
+            <span class="workSkill">Full Calendar</span>
             <span class="workSkill">Procreate</span>
         </div>  
 
@@ -210,14 +211,60 @@
               </div>
 
               <div class="projectGridItem1">
+                <em>UX/UI</em><br>
+                I created the designs to echo the layout of the previous portal - placing elements in categories remained the same, however had a cleaner look and allowed to compact the fields within the viewport while retaining clarity and legibility.
+                <br><br>
+                I created multiple designs in Procreate to present to the business. Ultimately, the business chose the design that had elements that were similar to the original portal (ie. card titles had similar bordering background, layout was in a similar location) however this was closer to a “dark-mode” version, as well as being more modernised and on-brand.
+                <br><br>
+                </div>
+
+                <div class="projectGridItem1">
+                  <em>Chosen Design</em>
+                  <br>
+                </div>
+
+                <div class="projectGridItem1">
+                  <img width="100%" src="https://naomijustin.com/images/work/web/iiNetFull7_700x1014_min.png" alt="iiNet Portal Chosen Design">
+                  <br><br>
+                </div>
+
+                <div class="projectGridItem1">
+                  <em>Existing Portal that needed the redesign</em>
+                  <br>
+                </div>
+
+                <div class="projectGridItem1">
+                  <img width="100%" src="https://naomijustin.com/images/work/web/iiNetFull8_700x366_min.png" alt="Previous portal layout and design">
+                  <br><br>
+                </div>
+
+                <div class="projectGridItem1">
+                  <em>Front End Development</em><br>
+                  I built the front end of the portal locally in Visual Studio Code, creating test JSON data to ensure that Ajax (POST and GET) methods were working before giving files over to the Back End Developers to connect to the API on the server.
+                  <br><br>
+                  The “Login” page was built with CSS Grid, Bootstrap, JavaScript and Ajax where the credentials are validated through the API on the server.
+                  <br><br>  
+                </div>
+              
+              <div class="projectGridItem1">
                 <img width="100%" src="https://naomijustin.com/images/work/web/iiNetFull1_700x435.png" alt="iiNet Login Page">
                 <br><br>
                 </div>
+
+                <div class="projectGridItem1">
+                  Once logged in, the user is then directed to the index page, or the blank form that allows a user to create a new ticket. There is also a prompt to allow the user to save their credentials in Chrome (triggered by the POST method in Ajax). 
+                  <br><br>
+                  </div>
 
               <div class="projectGridItem1">
                 <img width="100%" src="https://naomijustin.com/images/work/web/iiNetFull2_700x435.png" alt="iiNet Landing with Option to Save Password in Browser">
                 <br><br>
               </div>
+
+              <div class="projectGridItem1">
+                This ticket booking form has multiple dynamic dropdowns determined by parent selections, a “filter as you type” suburb dropdown, a file uploader and a calendar appointment selection. Technologies used here include the Full Calendar Plugin, Bootstrap, JavaScript, jQuery, Ajax and CSS grid. In the header, there are also “wave” SVGs that preserve the height and do not preserve the aspect ratio when resizing the browser to keep a sense of organic flow to the shapes without disrupting the lower section layout of the page.
+                <br><br>
+                </div>
 
               <div class="projectGridItem1">
                 <img width="100%" src="https://naomijustin.com/images/work/web/iiNetFull3_700x435.png" alt="iiNet Suburb Search Filter Dropdown pulling data via Ajax from JSON">
@@ -230,9 +277,24 @@
               </div>
 
               <div class="projectGridItem1">
+                Within this index page, other than booking a new ticket, the user also has the option of looking up existing tickets in the database - also pulled dynamically via Ajax from the JSON data file (using test data).
+                <br><br>
+                </div>
+
+                <div class="projectGridItem1">
+                  If the user chooses an existing open, cancelled, or completed ticket, this opens a modal that contains a log of actions or comments made on this ticket - pulled dynamically via Ajax. There is the ability to download the existing data viewed here as multiple file formats (Word, Excel, HTML etc.).
+                  <br><br>
+                  </div>                              
+
+              <div class="projectGridItem1">
                 <img width="100%" src="https://naomijustin.com/images/work/web/iiNetFull5_700x435.png" alt="iiNet View Ticket Information and Download Data">
                 <br><br>
               </div>
+
+              <div class="projectGridItem1">
+                Depending on the status of the ticket in question, there are also dynamic buttons such as a  cancelation option, and a View Documents option (if documents exist for this ticket). The View Documents section brings the user to a secondary modal where the user has the option of downloading a selection of PDF file, while still retaining the ability to go back to the current ticket view as to not disrupt the flow of the User Experience and prevent the user from needed to search the same ticket again.
+                <br><br>
+                </div>
 
               <div class="projectGridItem1">
                 <img width="100%" src="https://naomijustin.com/images/work/web/iiNetFull6_700x435.png" alt="iiNet View and Download Ticket Documents">
@@ -240,6 +302,8 @@
               </div>
 
               <div class="projectGridItem1">
+                <em>Accessibility</em><br>
+                All elements in the portal have a “tab-index” and can be accessed only via keyboard or only via mouse selections. Focus was also customised to keep the user aware of what would be selected while keeping on brand and aesthetically pleasing. All images have an alternative text to allow any broken links to still allow the user to not miss any information. And finally, all text has been kept above 12pt, and responsiveness worked correctly down to 320px browser width as these are both minimum required across web standards.
                 <br><br>
                 </div>
 
