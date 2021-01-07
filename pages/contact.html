@@ -37,7 +37,10 @@
     // }
     
     $(document).ready(function(){        
-
+        // ========== On Window Load, Fade Out Loader  ========= 
+        $(window).load(function(){                        
+            $(".loaderWrapper").fadeOut();
+        });    
     }); //End DOM Ready
 </script>
 
@@ -99,6 +102,13 @@
             <!-- Instagram -->
             <a href="https://codepen.io/naomijustin" target="_blank"><i class="fab fa-codepen socialMediaIcon"></i></a>              
         </div>
+    </div>
+
+    <!-- ======================
+                Loader 
+    ========================-->
+    <div class="loaderWrapper">
+        <div class="spinner"></div>
     </div>
 
 </main>
