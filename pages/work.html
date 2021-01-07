@@ -71,7 +71,10 @@
    
     
     $(document).ready(function(){
-
+       // ========== On Window Load, Fade Out Loader  ========= 
+       $(window).load(function(){                        
+            $(".loaderWrapper").fadeOut();
+        }); 
         
 
     }); //End DOM Ready
@@ -2068,6 +2071,14 @@
     </div> <!-- End Work Tab Content Container -->
 
     </div>
+
+    <!-- ======================
+                Loader 
+    ========================-->
+    <div class="loaderWrapper">
+      <div class="spinner"></div>
+    </div>
+
 </main>
 </body>
 </html>
