@@ -33,7 +33,11 @@
     });
 
     
-    $(document).ready(function(){        
+    $(document).ready(function(){
+        // ========== On Window Load, Fade Out Loader  ========= 
+        $(window).load(function(){                        
+            $(".loaderWrapper").fadeOut();
+        });        
 
     }); //End DOM Ready
 </script>
@@ -89,9 +93,15 @@
                 While she is passionate about art and creativity, she is fascinated in the process of creating experiences that feel smooth and enjoyable for end users.  
             </div>
         </div>
-
-
     </div>
-</main>
+
+    <!-- ======================
+                Loader 
+    ========================-->
+    <div class="loaderWrapper">
+        <div class="spinner"></div>
+    </div>
+
+</main> 
 </body>
 </html>
