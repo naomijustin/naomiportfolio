@@ -68,6 +68,48 @@
     width: 100vw;
     position: absolute;
 }
+
+/* ============================================
+                Loader
+============================================*/
+
+.loaderWrapper {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #1A1A1A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 4;
+}
+
+.spinner {
+    position: fixed;
+    z-index: 4;
+    width: 50px;
+    height: 50px;
+    margin: -76px 0 0 -76px;
+    border: 10px solid #1a1a1a;
+    border-radius: 50%;
+    border-top: 10px solid #3A3A3A;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
 /* ============================================
            Landing Grid
 ============================================*/
@@ -262,6 +304,12 @@
     border: 2px solid #E4DECB;
 }
 
+.miniGridWeb {
+    display: flex;
+    flex-direction: row;
+}
+
+
 /* ============ Art Grid ================== */
 .artGridContainer {
     display: grid;
@@ -269,18 +317,18 @@
     grid-gap: 10px;
 }
 
-    /* Victor Portrait - Square */
+/* Victor Portrait - Square */
 .artGridItem_1 {    
     grid-column: 1 / span 4;    
 }
 
-    /* NZ Animation - Landscape Rectangle */
+/* NZ Animation -Square */
 
 .artGridItem_2 {
     grid-column: 5 / span 4;    
 }
 
-/* Inktober Western - Landscape Rectangle  */
+/* Girl In Graphite - Portrait Rectangle  */
 .artGridItem_3 {    
     grid-column: 1 / 5;    
 }
@@ -295,10 +343,21 @@
     grid-column: 1 / span 4;    
 }
 
-/* Lady in Yellow */
+/* Lady in Yellow - Landscape Rectangle*/
 .artGridItem_6 {
     grid-column: 5 / span 4;    
 }
+
+/* Inktober Western - Square  */
+.artGridItem_7 {    
+    grid-column: 1 / 5;    
+}
+
+/* Night Shop - Square  */
+.artGridItem_8 {
+    grid-column: 5 / span 4;
+}
+
 
 
 .imgBtn {
@@ -379,6 +438,10 @@
        
 }
 
+.carousel-indicators {
+    z-index: 4;
+}
+
         /* ---- Project Content Lightbox Grid ---- */
 
         .projectGridLB {
@@ -424,9 +487,13 @@
 
 /* =============== About Grid =================== */
 
+#aboutContainer {
+    padding: 0px 20px 20px 20px;
+}
+
 #aboutGrid {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto;   
     padding-top: 120px;
     max-width: 900px;
     margin: 0 auto;
@@ -469,7 +536,7 @@
 /* =============== Contact Grid =================== */
 
 #contactContainer {
-    padding-top: 120px;
+    padding: 120px 20px 10px 20px;
 }
 
 #contactWrapper {
