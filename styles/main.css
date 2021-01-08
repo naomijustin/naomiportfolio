@@ -429,7 +429,16 @@
 
 .carousel-control-prev, 
 .carousel-control-next {
-    background-color: rgba(26, 26, 26, 0.3);    
+    background-color: rgba(26, 26, 26, 0.3);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0px 5px 0px 5px;
+    position: absolute;
+    top: 50%;
+    bottom: -50%;
+    
+
 }
 
 .carousel-control-prev:hover, 
@@ -441,6 +450,8 @@
 .carousel-indicators {
     z-index: 4;
 }
+
+
 
         /* ---- Project Content Lightbox Grid ---- */
 
