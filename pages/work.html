@@ -68,14 +68,53 @@
       }
       imageID.classList.add("active");
     }
+
+    // ===================== Load Youtube Videos via API ====================
+    // Youtube API Links
+    var tag = document.createElement('script');
+
+     tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // Load Videos
+    var player1; // HBC Retreat    
+    var player2; // HBC Centenial
+    var player3; // HN NZ Animation
+    var player4; // Rocket Animation 
+
+
+      function onYouTubeIframeAPIReady() {
+        player1 = new YT.Player('player1', {
+          height: '315',
+          width: '560',
+          videoId: 'jL2l5uJoR8I',          
+            });
+        player2 = new YT.Player('player2', {
+          height: '315',
+          width: '560',
+          videoId: 'zHehybhI16o',          
+            });
+        player3 = new YT.Player('player3', {
+          height: 'auto',
+          width: 'auto',
+          videoId: 'byjpMuwjJ5M',          
+            });
+        player4 = new YT.Player('player4', {
+          height: 'auto',
+          width: 'auto',
+          videoId: 'WldQgZEfJ3E',          
+            });
+          }
+
+
    
     
     $(document).ready(function(){
        // ========== On Window Load, Fade Out Loader  ========= 
        $(window).load(function(){                        
             $(".loaderWrapper").fadeOut();
-        }); 
-        
+        });      
 
     }); //End DOM Ready
 </script>
@@ -999,31 +1038,6 @@
                           <br><br>
                         </div>
 
-                        <div class="projectGridItem1">
-                          On occasion, I also would film and edit short films or promos for upcoming events (Centenary, upcoming Youth Camp, retreats), along with creating any relevant graphics needed.
-                          <br><br>
-                        </div>                        
-
-                        <div class="projectGridItem1" style="text-align: center;">
-                          Prophetic Retreat Promo - filmed on two Canon 6D and edited in Adobe Premiere Pro
-                          <br><br>
-                        </div>
-
-                        <div class="projectGridItem1">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/jL2l5uJoR8I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                          <br><br>
-                        </div>
-
-                        <div class="projectGridItem1" style="text-align: center;">
-                          Centenary Video - filmed on Sony a57 and edited in Adobe Premiere Pro. Created by Naomi Justin (formerly Naomi Fiedler-Cowdroy)
-                          <br><br>
-                        </div>
-
-                        <div class="projectGridItem1">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/zHehybhI16o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                          <br><br>
-                        </div>
-
                         <div class="projectGridItem1" style="text-align: center;">
                           Youtube Channel
                           <br><br>
@@ -1035,8 +1049,36 @@
                           <br>
                           <img src="https://naomijustin.com/images/work/web/HBCFull3_700x812_min.png" alt="Haberfield Youtube Channel">
                           <br><br>
+                        </div>            
+                       
+                        <div class="projectGridItem1">
+                          On occasion, I also would film and edit short films or promos for upcoming events (Centenary, upcoming Youth Camp, retreats), along with creating any relevant graphics needed.
+                          <br><br>
+                        </div>                        
+
+                        <div class="projectGridItem1" style="text-align: center;">
+                          Prophetic Retreat Promo - filmed on two Canon 6D and edited in Adobe Premiere Pro
+                          <br><br>
                         </div>
 
+                        <div class="projectGridItem1">
+                          <div class="youtubeVideo" class="youtubeVideo" id="player1"></div>                          
+                          <!-- <iframe class="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/jL2l5uJoR8I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                          <br><br>
+                        </div>
+
+                        <div class="projectGridItem1" style="text-align: center;">
+                          Centenary Video - filmed on Sony a57 and edited in Adobe Premiere Pro. Created by Naomi Justin (formerly Naomi Fiedler-Cowdroy)
+                          <br><br>
+                        </div>
+
+                        <div class="projectGridItem1">                          
+                          <div class="youtubeVideo" id="player2"></div>                        
+                          <!-- <iframe class="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/zHehybhI16o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                          <br><br>
+                        </div>
+
+                        
                         
 
                       </div> <!-- End Grid-->
@@ -1278,7 +1320,8 @@
 
                             <div id="artSlide2" class="carousel-item artSlide">
                               <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/byjpMuwjJ5M" allowfullscreen></iframe>
+                                <div id="player3" class="embed-responsive-item youtubeVideo"></div>                                                                
+                                <!-- <iframe class="embed-responsive-item youtubeVideo" src="https://www.youtube.com/embed/byjpMuwjJ5M" allowfullscreen></iframe> -->
                               </div>
                               <div class="carousel-caption d-none d-md-block">
                                   <h5>tech2 Harvey Norman New Zealand Animation</h5>
@@ -1306,7 +1349,8 @@
                             
                             <div id="artSlide3" class="carousel-item artSlide">
                               <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WldQgZEfJ3E" allowfullscreen></iframe>
+                                <div id="player4" class="embed-responsive-item youtubeVideo"></div>                                
+                                <!-- <iframe class="embed-responsive-item youtubeVideo" src="https://www.youtube.com/embed/WldQgZEfJ3E" allowfullscreen></iframe> -->
                               </div>
                               <div class="carousel-caption d-none d-md-block">
                                   <h5>Space Rocket Animation</h5>
@@ -2072,12 +2116,32 @@
 
     </div>
 
-    <!-- ======================
-                Loader 
-    ========================-->
+    <!-- ===============================
+                     Loader 
+    =================================-->
     <div class="loaderWrapper">
       <div class="spinner"></div>
     </div>
+
+    <!-- =======================================
+            Youtube Pause on Modal Close
+    ===========================================-->
+      <script>
+        // =================== HBC Modal Close ===================
+        $("#modalTab1Proj2").on('hidden.bs.modal', function() {         
+          player1.pauseVideo();
+          player2.pauseVideo();
+        });
+
+        //=================== Art Carousel Modal ==================
+        $("#modalTab2Proj1").on('hidden.bs.modal', function() {         
+          player3.pauseVideo();
+          player4.pauseVideo();
+        });
+
+
+      </script>
+
 
 </main>
 </body>
