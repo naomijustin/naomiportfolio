@@ -29,7 +29,13 @@
 
     // ========= Loads Header Nav into Page ============
     $(function() {
-        $("#navPlaceholder").load("/assets/headernav.html");
+        $("#navPlaceholder").load("/assets/headernav.html", function() {
+            // Remove Active Class of Nav            
+            $("#aboutNavBtn").removeClass("activeNavBtn");
+            $("#workNavBtn").removeClass("activeNavBtn");
+            // Add Active Class  of Nav
+            $("#contactNavBtn").addClass("activeNavBtn");
+        });
     });
 
     // function sendContact() {
