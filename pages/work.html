@@ -12,8 +12,7 @@
     <!-- Josefin Sans --> <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <!-- jQuery       --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Favicon      --> <link rel="icon" href="https://naomijustin.com/images/landingnav/naomi_favicon_32x32.png" sizes="16x16 32x32" type="image/png">
-    <!-- Animate CSS  --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
-    <!-- External JS  --> <script src="/js/work.js"></script>
+    <!-- Animate CSS  --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>     
     <!--<base href="/">-->
     <base href="/pages/work.html" target="blank">
     </head>
@@ -30,7 +29,14 @@
 
     // ========= Loads Header Nav into Page ============
     $(function() {
-        $("#navPlaceholder").load("/assets/headernav.html");
+        $("#navPlaceholder").load("/assets/headernav.html", function() {         
+          // Remove Active Class of Nav            
+          $("#aboutNavBtn").removeClass("activeNavBtn");
+          $("#contactNavBtn").removeClass("activeNavBtn");
+          // Add Active Class  of Nav
+          $("#workNavBtn").addClass("activeNavBtn");                                                      
+        });
+           
 
         // Open first tab by default on page load
         document.getElementById("defaultOpen").click();
@@ -86,13 +92,13 @@
 
       function onYouTubeIframeAPIReady() {
         player1 = new YT.Player('player1', {
-          height: '315',
-          width: '560',
+          height: 'auto',
+          width: 'auto',
           videoId: 'jL2l5uJoR8I',          
             });
         player2 = new YT.Player('player2', {
-          height: '315',
-          width: '560',
+          height: 'auto',
+          width: 'auto',
           videoId: 'zHehybhI16o',          
             });
         player3 = new YT.Player('player3', {
@@ -111,10 +117,15 @@
    
     
     $(document).ready(function(){
-       // ========== On Window Load, Fade Out Loader  ========= 
+       
+      
+      
+      // ========== On Window Load, Fade Out Loader  ========= 
        $(window).load(function(){                        
             $(".loaderWrapper").fadeOut();
         });      
+
+        
 
     }); //End DOM Ready
 </script>
@@ -1056,32 +1067,36 @@
                           <br><br>
                         </div>                        
 
+                      </div> <!-- End Grid-->
+
                         <div class="projectGridItem1" style="text-align: center;">
                           Prophetic Retreat Promo - filmed on two Canon 6D and edited in Adobe Premiere Pro
                           <br><br>
                         </div>
 
-                        <div class="projectGridItem1">
-                          <div class="youtubeVideo" class="youtubeVideo" id="player1"></div>                          
+
+                        <!-- <div class="projectGridItem1"> -->
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <div class="embed-responsive-item youtubeVideo" id="player1"></div>
+                          </div>                          
                           <!-- <iframe class="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/jL2l5uJoR8I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                           <br><br>
-                        </div>
+                        <!-- </div> -->
 
                         <div class="projectGridItem1" style="text-align: center;">
                           Centenary Video - filmed on Sony a57 and edited in Adobe Premiere Pro. Created by Naomi Justin (formerly Naomi Fiedler-Cowdroy)
                           <br><br>
                         </div>
 
-                        <div class="projectGridItem1">                          
-                          <div class="youtubeVideo" id="player2"></div>                        
-                          <!-- <iframe class="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/zHehybhI16o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                          <br><br>
-                        </div>
+                        <!-- <div class="projectGridItem1"> -->
+                          <div class="embed-responsive embed-responsive-16by9">                          
+                            <div class="embed-responsive-item youtubeVideo" id="player2"></div>
+                          </div>                                                  
 
                         
                         
 
-                      </div> <!-- End Grid-->
+                      
 
 
                     </div>
