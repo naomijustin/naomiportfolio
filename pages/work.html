@@ -14,7 +14,7 @@
     <!-- Favicon      --> <link rel="icon" href="https://naomijustin.com/images/landingnav/naomi_favicon_32x32.png" sizes="16x16 32x32" type="image/png">
     <!-- Animate CSS  --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>     
     <!--<base href="/">-->
-    <base href="/pages/work.html" target="blank">
+    <base href="/work/" target="blank">
     </head>
     <body>
     <!-- jQuery, then Popper.js, then Bootstrap JS -->
@@ -37,6 +37,11 @@
           $("#workNavBtn").addClass("activeNavBtn");                                                      
         });
            
+
+    // ========= Loads Footer into Page ============
+    $(function() {
+        $(".footerLoad").load("/assets/footer.html");
+    });
 
         // Open first tab by default on page load
         document.getElementById("defaultOpen").click();
@@ -2129,7 +2134,7 @@
 
     </div> <!-- End Work Tab Content Container -->
 
-    </div>
+    </div>     
 
     <!-- ===============================
                      Loader 
@@ -2164,5 +2169,9 @@
 
 
 </main>
+
+    <!-- Footer inserts here-->
+    <div class="footerLoad"></div>  
+
 </body>
 </html>
