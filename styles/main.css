@@ -8,11 +8,17 @@
     background-color: #1A1A1A;
     color: #E4DECB;
 }
+
+main {
+    min-height: calc(100vh - 90px);    
+      
+}
 /*  =============================================
             Landing Container
 =============================================*/
 #landingContainer {
-    height: 100vh;
+    /* height: 100vh; */
+    height: calc(100vh - 90px);
 }
 
 /*  =============================================
@@ -546,8 +552,8 @@
 #aboutBlobs {
     position: absolute;
     right: 50%;
-    width: 600px;
-}
+    width: 600px;            
+    }
 
 
 /*  =============================================
@@ -562,8 +568,7 @@
 
 #contactWrapper {
     background-color: #282828;
-    margin: 0 auto;
-    
+    margin: 0 auto;    
     max-width: 500px;
     padding: 20px;
     border-radius: 10px;
@@ -602,9 +607,11 @@
 
 
 /* ------------- Social Media Icons ---------------- */
+
 .socialMediaContainer {
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
+        
 }
 
 .socialMediaIcon {
@@ -615,6 +622,45 @@
     color: #E4DECB;
 }
 
+
+/*  =============================================
+                Footer Styling
+    =============================================     */
+
+footer {    
+    bottom: 0;        
+    width: 100%;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+    height: 50px;
+    position: sticky;
+    z-index: 4;    
+    
+}
+
+hr {
+    background-color: #3A3A3A;
+}
+
+
+
+/*  =============================================
+                Page Not Found Styling
+    =============================================     */
+
+    #notfoundContainer {
+        padding: 120px 20px 10px 20px;        
+        
+    }
+
+    #notfoundWrapper {
+        background-color: #282828;
+        margin: 0 auto;    
+        max-width: 500px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;            
+    }
 
 /*  =============================================
         Responsiveness
