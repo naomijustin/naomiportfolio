@@ -14,7 +14,7 @@
     <!-- Favicon      --> <link rel="icon" href="https://naomijustin.com/images/landingnav/naomi_favicon_32x32.png" sizes="16x16 32x32" type="image/png">
     <!-- Animate CSS  --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
     <!--<base href="/">-->
-    <base href="/pages/about.html" target="blank">
+    <base href="/about/" target="blank">
     </head>
     <body>
     <!-- jQuery, then Popper.js, then Bootstrap JS -->
@@ -38,6 +38,11 @@
         });
     });
 
+    // ========= Loads Social Icons into Page ============
+    $(function() {
+        $(".footerLoad").load("/assets/footer.html");
+    });
+
     
     $(document).ready(function(){
         // ========== On Window Load, Fade Out Loader  ========= 
@@ -54,18 +59,17 @@
 -->
 <main>
 
-    <div id="aboutContainer">
-    
-        <!-- Header Nav inserts here-->
-        <div id="navPlaceholder"></div>
+    <!-- Header Nav inserts here-->
+    <div id="navPlaceholder"></div>
+
+        <div id="aboutContainer">
 
         <!-- About Grid -->
         <div id="aboutGrid">
             
             <div class="aboutGridItem aboutGridItemCenter">
+        
                 
-                
-
                 <!-- "About" Profile Image and Clipping DESKTOP -->
                 <svg width="0" height="0">
                     <defs>
@@ -99,7 +103,11 @@
                 While she is passionate about art and creativity, she is fascinated in the process of creating experiences that feel smooth and enjoyable for end users.  
             </div>
         </div>
+
+
     </div>
+
+
 
     <!-- ======================
                 Loader 
@@ -109,5 +117,9 @@
     </div>
 
 </main> 
+
+    <!-- Footer inserts here-->
+    <div class="footerLoad"></div>
+
 </body>
 </html>
