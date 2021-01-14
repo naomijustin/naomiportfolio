@@ -23,7 +23,7 @@ This portfolio is to both demonstrate my skills in Front End Devlopment, UX/UI a
 
 ### Design
 * I then mocked up a few different designs until I was satisfied with both the look and the feasability of scope. These were created using Procreate on the iPad Pro 10.5".
-<table>
+<table style="border:0px">
   <tr>
     <td><img src="https://naomijustin.com/images/readme/UX_Portfolio1_700x325_min.png"></td>
     <td><img src="https://naomijustin.com/images/readme/UX_Portfolio2_700x325_min.png"></td>    
