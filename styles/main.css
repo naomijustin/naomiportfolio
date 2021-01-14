@@ -10,14 +10,13 @@
 }
 
 main {
-    min-height: calc(100vh - 90px);    
+    min-height: calc(100vh - 90px);     
       
 }
 /*  =============================================
             Landing Container
 =============================================*/
-#landingContainer {
-    /* height: 100vh; */
+#landingContainer {    
     height: calc(100vh - 90px);
 }
 
@@ -69,10 +68,10 @@ main {
 #mobileBgMenuFade {
     background-color: black;
     opacity: 0.6;
-    z-index: 2;
+    z-index: 5;
     height: 100vh;
     width: 100vw;
-    position: absolute;
+    position: fixed;
 }
 
 .activeNavBtn {
@@ -93,12 +92,12 @@ main {
     justify-content: center;
     align-items: center;
     position: fixed;
-    z-index: 4;
+    z-index: 6;
 }
 
 .spinner {
     position: fixed;
-    z-index: 4;
+    z-index: 6;
     width: 50px;
     height: 50px;
     margin: -76px 0 0 -76px;
@@ -129,9 +128,9 @@ main {
    align-items: center;
    justify-content: center;
    padding: 120px 0px 0px 0px;
-   min-height: 100vh;
+   min-height: calc(100vh - 90px);
    margin: 0 auto;
-   max-width: 1700px;
+   max-width: 1700px;   
 }
 .landingGridItem {
    color: #E4DECB;
@@ -142,7 +141,7 @@ main {
 }
 
 #landingProfileImage {
-    width: 650px;
+    width: 650px;    
 }
 
 /* ============== Fade In Text =============  */
@@ -156,7 +155,7 @@ main {
 }
 #landingNaomiProfile {
     opacity: 0;
-    text-align: center;
+    text-align: center;    
 }
 /* =================== Curved Skills Text Section =============== */
 #frontEndCurveSVG {
@@ -749,6 +748,7 @@ hr {
     #landingGridContainer {
         grid-template-columns: auto;
         padding-bottom: 0px;
+        min-height: calc(100vh - 90px);
     }
 
     .landingFont {
@@ -873,6 +873,7 @@ hr {
      #landingGridContainer {
          margin: 0px auto;
          width: 100vw;
+         height: calc(100vh - 90px);
      }
 
  }
@@ -942,12 +943,12 @@ hr {
     }
 
     #navBtnContainer {
-        position: absolute;
+        position: fixed;
         width: 60vw;
         right: 0;
         margin: 0px 0px 0px 0px;
         padding: 30px 0px 0px 0px;
-        z-index: 3; /* Background of Menu mobile menu is occupying z-index 2 */
+        z-index: 5; /* Background of Menu mobile menu is occupying z-index 2 */
         display: none;
         border-radius: 0px;
         background-color: #3A3A3A;
@@ -959,7 +960,7 @@ hr {
         display: block;
         text-align: center;
         background: #3A3A3A;
-        padding-bottom: 15px;
+        padding-bottom: 15px;        
     }
 
     .navButton {
