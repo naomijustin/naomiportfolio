@@ -23,7 +23,7 @@ This portfolio is to both demonstrate my skills in Front End Devlopment, UX/UI a
 
 ### Design
 * I then mocked up a few different designs until I was satisfied with both the look and the feasability of scope. These were created using Procreate on the iPad Pro 10.5".
-<img src="https://naomijustin.com/images/readme/UX_Portfolio1_700x325_min.png" width="50%"/> <img src="https://naomijustin.com/images/readme/UX_Portfolio2_700x325_min.png" width="50%"/>
+<img src="https://naomijustin.com/images/readme/UX_Portfolio1_700x325_min.png" width="auto" style="float: left"/> <img src="https://naomijustin.com/images/readme/UX_Portfolio2_700x325_min.png" width="auto" style="float: right"/>
 
 ## Technologies
 * HTML
@@ -44,10 +44,3 @@ This portfolio is to both demonstrate my skills in Front End Devlopment, UX/UI a
 ## Launch
 * Portfolio will be deployed to domain https://naomijustin.com/ by 16 January 2021.
 * Launched via hosting to Hostgator, and then using Cloudflare to deliver the site to the domain.
-
-<div class="socialMediaContainer">
-    <a href="https://www.linkedin.com/in/naomi-justin/" target="_blank"><i class="fab fa-linkedin-in socialMediaIcon"></i></a>&emsp;	        
-    <a href="https://github.com/naomijustin" target="_blank"><i class="fab fa-github socialMediaIcon"></i></a>&emsp;        
-    <a href="https://www.instagram.com/naomiartmedia/" target="_blank"><i class="fab fa-instagram socialMediaIcon"></i></a>&emsp;
-</div>
-
