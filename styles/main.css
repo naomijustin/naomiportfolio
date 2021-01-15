@@ -21,14 +21,6 @@ main {
 }
 
 /*  =============================================
-            Focus Elements
-=============================================*/
-/* button:focus {
-    outline: none;
-} */
-
-
-/*  =============================================
             Header Nav
 =============================================*/
 #headerNavContainer {
@@ -197,11 +189,6 @@ main {
     font-size: 19px;
 }
 
-/* .tabBtn:hover {              >>> Currently having issue - needs to be added to "OpenTab Function on Work Page"
-    background-color: #78756D;
-} */
-
-
 /* ==================== Work Page - Tab Content =========== */
 #workTabContentList {
     padding: 20px;
@@ -348,7 +335,7 @@ main {
     grid-column: 1 / 5;    
 }
 
-/* Cat Holding Mug - Portrait Rectangle */
+/* Morning Glow - Portrait Rectangle */
 .artGridItem_4 {    
     grid-column: 5 / span 4;    
 }
@@ -358,37 +345,31 @@ main {
     grid-column: 1 / span 4;    
 }
 
-/* Lady in Yellow - Landscape Rectangle*/
+/* Lady in Yellow - Landscape Rectangle */
 .artGridItem_6 {
     grid-column: 5 / span 4;    
 }
 
-/* Inktober Western - Square  */
+/* Inktober Western - Square */
 .artGridItem_7 {    
     grid-column: 1 / 5;    
 }
 
-/* Night Shop - Square  */
+/* Night Shop - Square */
 .artGridItem_8 {
     grid-column: 5 / span 4;
 }
 
-
-
 .imgBtn {
     background-color: transparent;
     border-radius: 0px;
-    padding: 0px; 
-            
+    padding: 0px;            
 }
 
 .imgBtn:hover {
     background-color: #3F3F3F;
     padding: 2px;      
 }
-
-
-
 
 /* =============== Project Image Styling =================== */
 
@@ -456,29 +437,23 @@ main {
     top: 50%;
     bottom: -50%;
     z-index: 4;
-    
-
 }
 
 .carousel-control-prev:hover, 
 .carousel-control-next:hover {
-    background-color: rgba(26, 26, 26, 0.5);
-       
+    background-color: rgba(26, 26, 26, 0.5);      
 }
 
 .carousel-indicators {
     z-index: 4;
 }
 
-
-
         /* ---- Project Content Lightbox Grid ---- */
 
         .projectGridLB {
             display: grid;
             grid-template-columns: auto auto;
-            grid-gap: 10px;
-            
+            grid-gap: 10px;  
         }
 
         /* Span Two Columns */
@@ -544,7 +519,6 @@ main {
 #aboutImageBlob {
     width: 100%;
     height: auto;
-
 }
 
 
@@ -558,7 +532,7 @@ main {
     position: absolute;
     right: 50%;
     width: 600px;            
-    }
+ }
 
 
 /*  =============================================
@@ -578,7 +552,6 @@ main {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-
 }
 
 #contactFieldGrid {
@@ -610,13 +583,11 @@ main {
     font-weight: 400;
 }
 
-
 /* ------------- Social Media Icons ---------------- */
 
 .socialMediaContainer {
     text-align: center;
-    font-size: 24px;
-        
+    font-size: 24px;    
 }
 
 .socialMediaIcon {
@@ -626,7 +597,6 @@ main {
 .socialMediaIcon:hover {
     color: #E4DECB;
 }
-
 
 /*  =============================================
                 Footer Styling
@@ -640,14 +610,11 @@ footer {
     height: 50px;
     position: sticky;
     z-index: 4;    
-    
 }
 
 hr {
     background-color: #3A3A3A;
 }
-
-
 
 /*  =============================================
                 Page Not Found Styling
@@ -655,7 +622,6 @@ hr {
 
     #notfoundContainer {
         padding: 120px 20px 10px 20px;        
-        
     }
 
     #notfoundWrapper {
@@ -668,10 +634,8 @@ hr {
     }
 
 /*  =============================================
-        Responsiveness
+                Responsiveness
     =============================================     */
-
-
 
 /* =================================  Breaks at 1089px WIDTH =========================== */
 @media only screen and (max-width: 1089px) and (min-width: 215px) and (min-height: 409px) {
@@ -701,7 +665,6 @@ hr {
 
     #landingProfileImage {
         width: 530px;
-
     }
 
     #frontEndCurveSVG {
@@ -710,7 +673,6 @@ hr {
         margin-top: 5px;
         margin-left: 30px;
     }
-
 }
 
 
@@ -722,7 +684,6 @@ hr {
     #aboutBlobs {
         left: -130px;
     }
-
 }
 
 
@@ -738,7 +699,6 @@ hr {
     .aboutGridItem {
         margin: 0px;
     }
-
 }
 
 /* ============================ Break range 785px - 510px WIDTH ======================== */
@@ -749,8 +709,6 @@ hr {
         margin-right: -225px;
     }
 }
-
-
 
 /* ====================================  Breaks at 769px HEIGHT =========================== */
 @media only screen and (max-height: 838px) {
@@ -777,7 +735,6 @@ hr {
 
     #landingProfileImage {
         width: 530px;
-
     }
 
     #frontEndCurveSVG {
@@ -786,18 +743,13 @@ hr {
         margin-top: 5px;
         margin-left: 30px;
     }
-
-
 }
-
-
 
 /* ================================= Breaks at 768px (Portrait Tablet) WIDTH ====================== */
 @media only screen and (max-width: 768px) {
    /* ----------- Header Nav (Logo, Hamburger) ------------ */
 
-
-   /* ----------- */
+   /* ----- Landing ------ */
     .landingFont {
         font-size: 35px;
    }
@@ -832,7 +784,6 @@ hr {
 
     /* -------------------------- Project Image Container Styling ----------------- */
     
-
     .projectContainer {
         grid-template-columns: auto;
     }
@@ -841,7 +792,6 @@ hr {
         grid-column: auto;
         grid-row: 2 / 2;
         justify-self: center;
-    
     }
 
     .projectTitle {
@@ -849,15 +799,11 @@ hr {
     }
 }
 
-
-
-
 /* ================================= Breaks at 716px (Landscape Tablet) HEIGHT ====================== */
 @media only screen and (max-height: 718px) {
     /* ----------- Header Nav (Logo, Hamburger) ------------ */
 
-
-    /* ----------- */
+    /* -------- Landing -------- */
      .landingFont {
          font-size: 35px;
     }
@@ -901,7 +847,6 @@ hr {
          transform: scale(0.8);
          max-width: 230px;
          margin-left: -20px;
-
      }
 
      #aboutBlobs {
@@ -913,8 +858,6 @@ hr {
      #clipPathAbout {
          transform: scale(0.6);
      }
-
-
  }
 
  /* ====================== Breaks at Max Width 624px ================ */
@@ -945,8 +888,6 @@ hr {
     #navBtnContainer a {
         display: inline !important;
     }
-
-
 }
 
 /* ================= Breaks at 600px (Mobile Medium Nav) "Hamburger Show" WIDTH ============== */
@@ -962,12 +903,11 @@ hr {
         right: 0;
         margin: 0px 0px 0px 0px;
         padding: 30px 0px 0px 0px;
-        z-index: 5; /* Background of Menu mobile menu is occupying z-index 2 */
+        z-index: 5;
         display: none;
         border-radius: 0px;
         background-color: #3A3A3A;
         height: 100vh;
-        /* Possibly insert Animation for Slide Menu here */
     }
 
     #navBtnContainer a {
@@ -1021,8 +961,16 @@ hr {
             .artGridItem_6 {
                 grid-column: 1 / span 8;    
             }
-                
 
+            /* Inktober Western - Square */
+            .artGridItem_7 {    
+                grid-column: 1 / span 8;    
+            }
+
+            /* Night Shop - Square */
+            .artGridItem_8 {
+                grid-column: 1 / span 8;
+            }
 }
 
 /* ================= Breaks at 509px (Mobile Medium) WIDTH ============== */
@@ -1043,25 +991,17 @@ hr {
         transform: scale(0.55);
     }
 
-
-
     .aboutGridItem {
         margin: auto;
         max-width: 265px;
-
     }
-
-
 }
-
-
 
 /* ================= Breaks at 571px (Mobile Medium) HEIGHT ============== */
 @media only screen and (max-height: 588px) and (min-height: 444px) {
     /* ----------- Header Nav (Logo, Hamburger) ------------ */
 
-
-    /* ----------- */
+    /* ---------- Landing ---------- */
      .landingFont {
          font-size: 30px;
     }
@@ -1081,27 +1021,20 @@ hr {
          width: 290px;
          height: 290px;
          margin-top: 1px;
-         margin-left: 20px;
-         /* border: solid 2px red; */
+         margin-left: 20px;         
      }
-
-     /* .landingGridItem {
-         border: solid 2px blue;
-     } */
 
      #landingGridContainer {
          margin: 0px auto;
          width: 100vw;
      }
-
  }
 
  /* ================= Breaks at 484px (Landscape Mobile Small) HEIGHT ============== */
 @media only screen and (max-height: 484px) {
     /* ----------- Header Nav (Logo, Hamburger) ------------ */
 
-
-    /* ----------- */
+    /* ---------- Landing ------ */
      .landingFont {
          font-size: 30px;
     }
@@ -1126,7 +1059,7 @@ hr {
  }
 
 
- /* ================= Range for landscape Mobile ================= */
+ /* ================= Range for Landscape Mobile ================= */
 
  @media only screen and (max-height: 484px) and (min-width: 530px) and (min-height: 397px) {
     #landingGridContainer {
@@ -1139,8 +1072,6 @@ hr {
         grid-column: 1 / span 2;
     }
  }
-
-
 
  /* ====================== Breaks at Max 500px WIDTH ================ */
  
@@ -1164,7 +1095,6 @@ hr {
     }
 }
 
-
 /* ========================== Breaks at Max 410px WIDTH ================= */
 
 @media only screen and (max-width: 410px) {
@@ -1181,14 +1111,12 @@ hr {
            width: 240px;
            height: 145px;
        }
-
 }
-   
 
  /* ================= Breaks at 400px (Mobile Medium) WIDTH ============== */
+
 @media only screen and (max-width: 400px) {
     /* ----------- Header Nav (Logo, Hamburger) ------------ */
-
 
     /* ----------- */
      .landingFont {
@@ -1204,7 +1132,6 @@ hr {
          width: 320px;
          padding: 0px;
          margin: 0px;
-
      }
 
      #frontEndCurveSVG {
@@ -1212,20 +1139,16 @@ hr {
          height: 290px;
          margin-top: 1px;
          margin-left: 20px;
-
      }
-
 
      #landingGridContainer {
          margin: 0px auto;
          width: 100vw;
      }
-
  }
 
  /* ================= Breaks at 508px (Mobile Small Landscape) ============== */
 @media only screen and (max-height: 508px) and (min-width: 375px) {
-    
 
     /* ---- Landing Font ------- */
         .landingFont {
@@ -1247,13 +1170,12 @@ hr {
         width: 200px;
         height: 200px;
         margin-top: 2px;
-        margin-left: 12px;
-        
+        margin-left: 12px;  
     }    
-
 }
 
  /* ================= Breaks at 571px (Mobile Small Portrait) ============== */
+
  @media only screen and (max-width: 375px) and (max-height: 553px) {
      
     #landingGridContainer {
@@ -1266,33 +1188,26 @@ hr {
         grid-column: 1 / span 1;
     }
 
-    /* ---- Landing Font ------- */
+    /* ----------- Landing ----------- */
     .landingFont {
         font-size: 20px;
-   }
+    }
 
 /* --------- Landing Image and Circular Text -------- */
 #landingNaomiProfile {
     font-size: 20px;
-}
+    }
 
 #landingProfileImage {
     width: 220px;
     padding: 0px;
     margin: 0px;
-}
+    }
 
 #frontEndCurveSVG {
     width: 200px;
     height: 200px;
     margin-top: 2px;
     margin-left: 12px;
-    
-}    
-
- }
-
-
-
-
-
+    }    
+}
