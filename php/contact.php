@@ -19,20 +19,9 @@ if (isset($_POST['submit'])) {
     }
     else {
         echo "<script>window.location.href='/pages/contact.html';alert('Your message has been sent')</script>";
-    }
-    
-    //Correct Script (for deploy)
-    //echo "<script>window.location.href='/pages/contact.html';alert('Your message has been sent')</script>";
-    
-    // Test Script
-    // echo "<script>window.location.href='/php/contact.html';alert('Your message has been sent')</script>";
+    }        
 
     exit();
 }
-// else {
-//     // Redirect to home page if accessing without 'Submit'
-//     header("Location: ../contact.html?mailsend=error");
-//     exit();
-// }
 
 ?>
