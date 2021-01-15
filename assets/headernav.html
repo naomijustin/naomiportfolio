@@ -7,27 +7,13 @@ $(function() {
 
         // =========== Show Hamburger Menu "Click" ============
         $("#hamburgerBtn").click(function(){
-            if ($("#navBtnContainer").is(":hidden")) {                
-                
-                // // Add Animated Classes (Show)   ------------------------ This Works (Issue with Hide and Fade - Will continue at a later point)
-                // const navShow = document.querySelector("#navBtnContainer");
-                // navShow.classList.add('animate__animated', 'animate__fadeInRight');
-                // const navBgShow = document.querySelector("#mobileBgMenuFade");
-                // navBgShow.classList.add('animate__animated', 'animate__fadeIn');
+            if ($("#navBtnContainer").is(":hidden")) {                                                
                 $("#navBtnContainer").show();
-                $("#mobileBgMenuFade").show();
-                
-                // // Remove Animated Classes (Show)  ------------------------ This Partially Works (Issue with Opacity 0 to 1 [instead of 0 to 0.6]) - will continue at a later point
-                // navShow.addEventListener('animationend', () => {
-                // navShow.classList.remove('animate__animated', 'animate__fadeInRight');
-                // });
-                // navBgShow.addEventListener('animationend', () => {
-                // navBgShow.classList.remove('animate__animated', 'animate__fadeIn');
-                // });                                
+                $("#mobileBgMenuFade").show();                                               
             }  
-        }) // > End Hamburger Click
+        }) // End Hamburger Click
 
-        // ========= Show Hamburger Menu "Enter"  (Accessibility) ===========
+        // ========= Show Hamburger Menu "Enter" (Accessibility) ===========
         $("#hamburgerBtn").on("keydown", function(e){
             if(e.which == 13 || e.keyCode == 13 || e.key == 13) {
                 if ($("#navBtnContainer").is(":hidden")) {
@@ -39,23 +25,9 @@ $(function() {
             
         // ============ Close Hamburger Menu via "Click" on Faded Section ==============
         $("#mobileBgMenuFade").click(function(){
-            if ($("#navBtnContainer").is(":visible")) {
-
-                // // Add Animated Classes (Hide)   ------------------------ This Is Not Working (Issue with Visible/Hidden Trigger) - will continue at a later point
-                // const navHide = document.querySelector("#navBtnContainer");
-                // navHide.classList.add('animate__animated', 'animate__fadeOutRight');
-                // const navBgHide = document.querySelector("#mobileBgMenuFade");
-                // navBgHide.classList.add('animate__animated', 'animate__fadeOut');
+            if ($("#navBtnContainer").is(":visible")) {                
                 $("#navBtnContainer").hide();
-                $("#mobileBgMenuFade").hide();
-
-                // // Remove Animated Classes (Hide)   ------------------------ This Is Not Working (Issue with Visible/Hidden Trigger) - will continue at a later point
-                // navHide.addEventListener('animationend', () => {
-                // navHide.classList.remove('animate__animated', 'animate__fadeOutRight');
-                // });
-                // navBgHide.addEventListener('animationend', () => {
-                // navBgHide.classList.remove('animate__animated', 'animate__fadeOut');
-                // });
+                $("#mobileBgMenuFade").hide();                
             }
         })
         
@@ -71,8 +43,6 @@ $(function() {
 
     }); // End Parent Function
 </script>
-
-
 
 <!-- ==============================================
             Header Nav HTML Markup
