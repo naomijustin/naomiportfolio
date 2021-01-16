@@ -47,7 +47,10 @@
     });    
 
     $(document).ready(function(){
-
+        // ========== On Window Load, Fade Out Loader  ========= 
+        $(window).load(function(){                        
+            $("#navPlaceholder").fadeTo(500, 1);
+        });
         // Show Landing Page Elements on load
         $("#landingHiText").fadeTo(1500, 1);
         $("#landingImNaomiText").delay(1500).fadeTo(1000, 1);
@@ -65,7 +68,7 @@
        <div id="landingContainer">
         
         <!-- Header Nav inserts -->        
-        <div id="navPlaceholder"></div>
+        <div id="navPlaceholder" style="display: none;"></div>
 
            <!-- Landing Grid -->
            <div id="landingGridContainer">
